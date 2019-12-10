@@ -110,10 +110,7 @@ The below table breaks down the general time needed per week.
 | 6    | 13:20h | prototype        | [lab][w6lab],  work on prototype                       |
 | 7    |  NaN   | assessment 2     | [a2 (oral test)][grading]                              |
 
-<details>
-    <summary>Schedule</summary>
-    <img src="assets/schedule.jpg" alt="Block tech schedule overview">
-</details>
+> Check [`rooster.hva.nl`][class] for exact class dates
 
 ## Grade
 
