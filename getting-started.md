@@ -24,6 +24,10 @@ Include your name, a profile picture, and a URL to your homepage. Teachers will 
 
 You’re allowed to stay anonymous online for this course by omitting sensitive information, but a good looking GitHub profile can help you get an internship or job later. 
 
+### Brightspace
+
+We use our DLO Brightspace for schedulers and rubric feedback. Make sure you enroll to the **Back-end Development** course, you can do so by using the [HvA courseselector][course]. It's important to select the right class for teachers to give you feedback and grades. If you're not sure, ask your teacher to see if you are on the correct _classlist_.
+
 ## Installation
 
 ### CLI
@@ -129,3 +133,4 @@ Each assignment has a different template in which you can hand in your assignmen
 [issues]: https://github.com/cmda-bt/be-course-19-20/issues/new/choose
 [terminal]: https://github.com/microsoft/terminal
 [notifications]: https://help.github.com/en/github/managing-subscriptions-and-notifications-on-github/configuring-notifications
+[course]: https://courseselector.mijnhva.nl/nl#/CourseSelector/78076118-8f51-e911-a82e-000d3a29a761/2019-2020
