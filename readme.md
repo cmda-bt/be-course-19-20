@@ -56,7 +56,8 @@ If you have questions:
 *   [Browse examples][examples]
 *   [Search StackOverflow][stackoverflow]
 *   [Use a search engine like DuckDuckGo][duckduckgo]
-*   [Ask questions in channels on Slack][slack]
+*   [Ask questions on Slack][slack]
+*  [Office hours (lecturers)][office]
 
 ## Goals
 
@@ -177,10 +178,10 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [coc]: code-of-conduct.md
 [ruc]: https://www.amsterdamuas.com/practical-matters/algemeen/hva-breed/juridische-zaken/legal-affairs/regulation-undesirable-conduct/regulation-undesirable-conduct.html#anker-3-complaints-authority
 [rog]: https://www.hva.nl/praktisch/algemeen/hva-breed/juridische-zaken/loket-beroep-bezwaar-en-klacht/regeling-ongewenst-gedrag/regeling-ongewenst-gedrag.html?origin=gbS4rg%2FDTZuxQ6lGVF%2BN1A
-[author1]: https://wooorm.com
-[author2]: https://dandevri.es
+[author]: https://dandevri.es
 [mit]: license.md#code
 [cc-by-4.0]: license.md#documentation-and-images
+[office]: https://dlo.mijnhva.nl/d2l/home/59296
 
 [gs]: getting-started.md
 
