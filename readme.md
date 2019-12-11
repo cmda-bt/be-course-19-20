@@ -182,6 +182,7 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [cc-by-4.0]: license.md#documentation-and-images
 [office]: https://dlo.mijnhva.nl/d2l/home/59296
 [faq]: https://dlo.mijnhva.nl/d2l/lms/faq/view_faq.d2l?ou=32096
+[class]: https://rooster.hva.nl/
 
 [gs]: getting-started.md
 
