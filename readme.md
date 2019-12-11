@@ -59,6 +59,8 @@ If you have questions:
 *   [Ask questions on Slack][slack]
 *  [Office hours (lecturers)][office]
 
+> Frequently asked questions can be found in Brightspace under [`Administration > FAQ`][faq].
+
 ## Goals
 
 #### Main goals
@@ -182,6 +184,7 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [mit]: license.md#code
 [cc-by-4.0]: license.md#documentation-and-images
 [office]: https://dlo.mijnhva.nl/d2l/home/59296
+[faq]: https://dlo.mijnhva.nl/d2l/lms/faq/view_faq.d2l?ou=32096
 
 [gs]: getting-started.md
 

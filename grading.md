@@ -44,6 +44,9 @@ This is an *oral test* where you **present your prototype with your team**. You 
 > [Rubric of assessment 2][a2]
 
 
+> You can find your feedback on the rubric on Brightspace under `administration > grades`.
+
+
 ## Publishing
 Grades will be published and communicated trough _Email_ and/or _Slack_. We also publish grade lists on _Brightspace_ based on student numbers.
 
