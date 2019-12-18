@@ -27,6 +27,8 @@ The course **Backend** is given at [**@CMDA**][cmda] in 2020 between 3 February 
 *   **Language**: Dutch instructions and English resources
 *   **Entry requirements**: N/A
 
+_Back-end is part of the  CMD Amsterdam **design & build space** (technical course) that focusses on   Conceptualizing (2), Imagining and creating (3), Multidisciplinary collaboration (5) & Research (9) competences._
+
 ## Description
 In Backend we peek behind the curtains and inspect what’s behind the web. You build web apps with [Node.js][node], communicate with [HTTP][http], and store data in a database with [MongoDB][mongodb]. In this course you’ll advance your web dev skills. You’ll learn to use computers to actually make what you design work: people can actually fill in forms, like things, and upload files.
 
