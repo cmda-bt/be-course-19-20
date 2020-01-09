@@ -1,3 +1,5 @@
+# Week 1 
+
 > Always bet on JavaScript.
 >
 > — [**@BrendanEich**][quote-author]
