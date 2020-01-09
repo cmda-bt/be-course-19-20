@@ -41,7 +41,8 @@ This course is chosen alongside **Frontend 2** and **Project Tech**, together ma
 *   [GitHub][gh] — Main source of information, slides, assignments and more
 *   [Slack][slack] — General chatter and Q&A
 *   [Brightspace][brightspace] — Schedulers, rubrics and grading
-
+*  
+> Read more about privacy, personal health, teamwork or inclusivity in the [`/docs`](/docs) folder.
 
 If you have questions:
 
@@ -142,8 +143,7 @@ part of the [Faculty of Digital Media and Creative Industries][faculty] at the
 
 ## Conduct
 
-This course has a [Code of Conduct][coc].  Anyone interacting with this
-repository, organisation, or community is bound by it.
+This course has a [Code of Conduct][coc].  Anyone interacting with this repository, organisation, or community is bound by it.
 
 Staff and students of the Amsterdam University of Applied Sciences (Hogeschool
 van Amsterdam) are additionally bound by the [Regulation Undesirable
