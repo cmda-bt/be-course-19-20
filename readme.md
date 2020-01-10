@@ -12,22 +12,21 @@
 
 ## Synopsis
 
-The course **Backend** is given at [**@CMDA**][cmda] in 2020 between 3 February and 26 June.
+The course **Backend** is given at [**@CMDA**][cmda] in 2020 between February 3 and June 26.
 
-*   **Course**: Backend
-*   **Coordinator**: [Danny de Vries][dangit]
+*   **Course**: [Backend Development][course] (`2000BAD_16 `)
+*   **Coordinator**: [Danny de Vries][dangit] - d.de.vries4@hva.nl
 *   **Lecturers**:
-    [Danny de Vries][dangit] ([**@dandevri**][danweb]) and
-    [Laurens Aarnoudse][razgit] ([**@razpudding**][razweb])
-*   **SIS**: Backend Development (_2000BAD_16_)
+    [Danny de Vries][dangit] ([**@dandevri**][danweb]),
+    [Laurens Aarnoudse][razgit] ([**@razpudding**][razweb]) and [Randy Huls][rangit] ([**@randyhuls**][ranweb])
 *   **Credit**: 3 ECTS
 *   **Academic year**: 2019-2020
 *   **Period**: Quarter 3 (spring)
-*   **Programme**: Communication and Multimedia Design (full time bachelor)
+*   **University**: [Amsterdam University of Applied Sciences][university]
+*   **Programme**: [Communication and Multimedia Design][cmd] (full time bachelor CROHO: `34092`)
+*   **Faculty**: [Digital Media and Creative Industries][faculty]
 *   **Language**: Dutch instructions and English resources
 *   **Entry requirements**: N/A
-
-_Back-end is part of the  CMD Amsterdam **design & build space** (technical course) that focusses on   Conceptualizing (2), Imagining and creating (3), Multidisciplinary collaboration (5) & Research (9) competences._
 
 ## Description
 In Backend we peek behind the curtains and inspect what’s behind the web. You build web apps with [Node.js][node], communicate with [HTTP][http], and store data in a database with [MongoDB][mongodb]. In this course you’ll advance your web dev skills. You’ll learn to use computers to actually make what you design work: people can actually fill in forms, like things, and upload files.
@@ -35,6 +34,8 @@ In Backend we peek behind the curtains and inspect what’s behind the web. You 
 Backend is an elective course given in Quarter 3 (spring) after the core curriculum of our programme, building further on knowledge acquired in *Internetstandaarden*, *Inleiding Programmeren*, and *Blok Web*. 
 
 This course is chosen alongside **Frontend 2** and **Project Tech**, together making up Block Tech. If you’d like to continue with web development after this course, do a tech internship, choose the [Tech Track][track] for the fall semester next year, and pick [Minor Everything Web][minor] in the spring semester after that.
+
+_Back-end is part of the  CMD Amsterdam **design & build space** (technical course) that focusses on   Conceptualizing (2), Imagining and creating (3), Multidisciplinary collaboration (5) & Research (9) competences._
 
 ## Communication
 
@@ -163,11 +164,14 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [MIT][] © [Danny de Vries][dangit], docs and images are [CC-BY-4.0][].
 
 [banner]: https://cmda-bt.github.io/be-course-19-20/assets/banner.svg
+[cmd]: https://www.cmd-amsterdam.nl/english/
 [cmda]: https://github.com/cmda
 [dangit]: https://github.com/dandevri
 [danweb]: https://github.com/dandevri
 [razgit]: https://github.com/razpudding
 [razweb]: https://github.com/razpudding
+[rangit]: https://www.linkedin.com/in/randyhuls/
+[ranweb]: https://www.linkedin.com/in/randyhuls/
 [node]: https://nodejs.org/en/
 [mongodb]: https://www.mongodb.com/
 [http]: https://tools.ietf.org/html/rfc2068
@@ -191,9 +195,9 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [author]: https://dandevri.es
 [mit]: license.md#code
 [cc-by-4.0]: license.md#documentation-and-images
-[office]: https://dlo.mijnhva.nl/d2l/home/59296
 [faq]: https://dlo.mijnhva.nl/d2l/lms/faq/view_faq.d2l?ou=32096
 [class]: https://rooster.hva.nl/
+[course]: https://studiegids.hva.nl/#/cmd-vt/1/010624
 
 [gs]: getting-started.md
 

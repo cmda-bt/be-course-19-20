@@ -30,7 +30,8 @@
 ## Playground
 Before you start you'll probably want to read a bit about **Express,** **routing,** and **templating**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help. You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. 
 
-* [Express.js Workshopper][workshopper]
+* [Express.js (workshopper)][workshopper]
+* [Unfurl (tool)][unfurl]
 
 
 ## Assignments
@@ -112,3 +113,5 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [query]: https://www.youtube.com/watch?v=zDovsTG2a7g
 [template]: https://expressjs.com/en/guide/using-template-engines.html
 [issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
+
+[unfurl]: https://dfir.blog/unfurl/
