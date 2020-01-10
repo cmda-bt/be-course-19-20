@@ -28,7 +28,7 @@
 * [Query Parameters in JavaScriopt][query]
 
 ## Playground
-You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. They self guided lesson modules, from other sources or video's to watch.
+Before you start you'll probably want to read a bit about **Express,** **routing,** and **templating**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help. You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. 
 
 * [Express.js Workshopper][workshopper]
 

@@ -21,6 +21,7 @@
 * Lab-1
 
 ## Theory
+Before you start you'll probably want to read a bit about **Node,** the **JavaScript engine,** and **client vs. server-side**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help.
 
 * [_Introduction to Node.js_][intro-node]
 * [_Differences between Node.js and the Browser_][node-browser]
