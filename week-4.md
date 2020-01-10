@@ -80,15 +80,20 @@ An even better solution is to use a _database as a service_. Instead of having t
 *  **Due**: before week 5
 
 #### Description
-You probably have gathered data from the client to the server but what happens when you quit the server? You lose all your data. A database will permanently store the data for you. How you store
+You probably have gathered data from the client to the server but what happens when you quit the server? You lose all your data. A database will permanently store the data for you. A database is for persistence, store information apart from the server. Text is the easiest thing to store, media such as images, blobs or passwords require additional effort.
+
+- Save data to the database
+- Query the database from the server
+- Display data from the server to the client
 
 1. Think about how you are going to store the data. Every piece of data needs a `type`. e.g.
    * Likes can be stored as `true` or `false`
    * Are telephone numbers typeof `number` or are they strings?
 2. It's helpful to draw the structure of your database. We ask you to include a diagram in your readme that explains what the structure is like (**hint**: [Google Drawings][drawings]).
-3. Start small. Don't try to store everything into the database at once.
+
 
 **Tips**  
+* Start small. Don't try to store everything into the database at once.
 * You can use the [`mongodb`](https://www.npmjs.com/package/mongodb) package inside node to interface with your database.
 * Additionally you can use [`mongoose`](https://www.npmjs.com/package/mongoose) it makes it a bit easier to model and your database.
 * You can use a [MongoDB GUI](https://www.mongodb.com/products/compass) to see and manipulate your data with a handy User Inerface.

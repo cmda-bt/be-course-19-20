@@ -27,6 +27,7 @@ Before you start you'll probably want to read a bit about **Node,** the **JavaSc
 * [_Differences between Node.js and the Browser_][node-browser]
 * [_The V8 JavaScript engine_][v8-engine]
 * [_An introduction to the npm package manager_][npm]
+* [_The JavaScript engine visualized_][visual]
 
 ## Playground
 You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. The below workshoppers are interactive, self guided lesson modules, from [NodeSchool][nodeschool].
@@ -92,6 +93,7 @@ Create a server that handles routes and serves static files in Node.js. Feel fre
 **Ask yourself upon completion:**
 * How does the `app instance` work? What makes it possible you can do things like `app.get` or `app.listen`?
 * What are the `req` and `res` parameters?
+* The confusing part is that your laptop is both the client and the server. It's a `local development` environment.
 
 **Additional resources**
 * [Basic Routing](https://expressjs.com/en/starter/basic-routing.html)
@@ -125,3 +127,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [intro-npm]: https://www.freecodecamp.org/news/introduction-to-npm-scripts-1dbb2ae01633/
 [global]: https://nodejs.dev/npm-global-or-local-packages
 [issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
+[visual]: https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf

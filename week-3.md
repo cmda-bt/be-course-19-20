@@ -56,6 +56,8 @@ Think about the _movie example_ from the lecture.
 *   Make users enter their hobbies and interests
 *   Etc.
 
+There are roughly 3 ways to send data from the client to the serve: 1) using query parameters 2) fetch from the client to the server 3) use HTTP request methods on a form. When you make an HTTP request, a response comse back. You'll want the body of the response.
+
 1. You can use query and parameters from the previous to start but you'll probably want to use `HTTP request methods` such as `post` or `delete`. Do you need a `form` for this?
 2. There are several packages from NPM that make working with data coming in from request (`req.body`) easier.
    * [`body-parser`][body] parse incoming request bodies
