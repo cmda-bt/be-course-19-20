@@ -118,6 +118,12 @@ The below table breaks down the general time needed per week.
 
 > Check [`rooster.hva.nl`][class] for exact class dates
 
+
+<details>
+    <summary>Schedule Gantt chart</summary>
+    <img src="assets/schedule.jpg" alt="Block tech schedule overview">
+</details>
+
 ## Grade
 
 | Task                                |   Weight |
