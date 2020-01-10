@@ -41,7 +41,7 @@ This course is chosen alongside **Frontend 2** and **Project Tech**, together ma
 *   [GitHub][gh] — Main source of information, slides, assignments and more
 *   [Slack][slack] — General chatter and Q&A
 *   [Brightspace][brightspace] — Schedulers, rubrics and grading
-*  
+  
 > Read more about privacy, personal health, teamwork or inclusivity in the [`/docs`](/docs) folder.
 
 If you have questions:
@@ -57,9 +57,11 @@ If you have questions:
 *   [Search StackOverflow][stackoverflow]
 *   [Use a search engine like DuckDuckGo][duckduckgo]
 *   [Ask questions on Slack][slack]
-*  [Office hours (lecturers)][office]
+*   [Ask a student-assistant on Slack][slack]
 
 > Frequently asked questions can be found in Brightspace under [`Administration > FAQ`][faq].
+
+> This course doesn't have office hours. Teachers have limited time to help you outside of class. Attendance to class is not compulsory. 80% of success in this course is showing up, so show up and come prepared with your questions. Don't hesitate to ask questions or feedback during class.
 
 ## Goals
 
