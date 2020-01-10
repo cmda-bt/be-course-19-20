@@ -82,36 +82,37 @@ In practice you’ll learn to:
 *  <a name="subgoal-2"></a>
     Use packages from npm ([**week 1**][w1])
 * <a name="subgoal-3"></a>
-    Communicate over HTTP ([**week 2**][w2])
+    Use web frameworks like express ([**week 1**][w1])
 * <a name="subgoal-4"></a>
-    Use web frameworks like express ([**week 2**][w2])
+    Communicate over HTTP ([**week 2**][w2])
 * <a name="subgoal-5"></a>
-    Render data server-side ([**week 2**][w2])
+    Render data server-side with templating ([**week 2**][w2])
 * <a name="subgoal-6"></a>
     Upload data and files to servers ([**week 3**][w3])
 * <a name="subgoal-7"></a>
-    Respond with data from a server ([**week 3**][w4])
-* <a name="subgoal-8"></a>
     Request data from clients ([**week 3**][w4])
+* <a name="subgoal-8"></a>
+    Store data in a MongoDB database ([**week 4**][w4])
 * <a name="subgoal-9"></a>
-    Connect to database with Mongoose ([**week 4**][w4])
+    Use localStorage to store data client-side ([**week 4**][w4])
 * <a name="subgoal-10"></a>
-    Get data from MongoDB ([**week 4**][w4])
+    Deploy your application for production ([**week 6**][w6])
 * <a name="subgoal-11"></a>
-    Debugging, error handling and deploying ([**week 4**][w4])
+    Error handling and security enhancements ([**week 7**][w7])
 
 The below table breaks down the general time needed per week.
 
 | Week | Effort | Topic            | Activities                                             |
 | ---- | -----: | ---------------- | ------------------------------------------------------ |
-| 0    |  NaN   | getting started  | [getting started][gs]                 |
-| 1    |  9:20h | node & npm       | [lab][w1lab], [lecture][w1lec], [assignments][w1a]     |
-| 2    |  9:20h | http & express   | [lab][w2lab], [lecture][w2lec], [assignments][w2a]     |
-| 3    |  9:20h | data & requests  | [lab][w3lab], [lecture][w3lec], [assignments][w3a]     |
-| 4    |  9:20h | databases        | [lab][w4lab], [lecture][w4lec], [assignments][w4a]     |
+| 0    |  NaN   | getting started  | [getting started][gs]                                  |
+| 1    |  9:20h | node & express   | [lab][w1lab], [lecture][w1lec], [assignments][w1a]     |
+| 2    |  9:20h | query & template | [lab][w2lab], [lecture][w2lec], [assignments][w2a]     |
+| 3    |  9:20h | http             | [lab][w3lab], [lecture][w3lec], [assignments][w3a]     |
+| 4    |  9:20h | database         | [lab][w4lab], [lecture][w4lec], [assignments][w4a]     |
 | 5    |  NaN   | assessment 1     | [a1 (oral test)][grading]                              |
-| 6    | 13:20h | prototype        | [lab][w6lab],  work on prototype                       |
-| 7    |  NaN   | assessment 2     | [a2 (oral test)][grading]                              |
+| 6    | 13:20h | deploy           | [lab][w6lab],  work on prototype                       |
+| 7    | 13:20h | prototype        | [lab][w6lab],  work on prototype                       |
+| 8    |  NaN   | assessment 2     | [a2 (oral test)][grading]                              |
 
 > Check [`rooster.hva.nl`][class] for exact class dates
 
@@ -194,6 +195,7 @@ Conduct][ruc] ([Regeling Ongewenst Gedrag][rog]).
 [w4]: week-4.md
 [w5]: week-5.md
 [w6]: week-6.md
+[w7]: week-7.md
 
 [w1lec]: week-1.md#lecture
 [w2lec]: week-2.md#lecture
