@@ -32,6 +32,15 @@ This is the rubric your teacher will grade you on. Give your fellow student a gr
 
 → Rubric
 
+**Questions:**  
+Make sure you come to the lab prepared in advance:
+
+* Know which questions you want to ask.
+* If you have a bug, investigate and try to make a detailed explanation of your problem.
+* Ask other students if they encountered the same problem.
+
+[Read more about asking questions](/docs/asking-questions.md)
+
 
 ## Assessment
 
