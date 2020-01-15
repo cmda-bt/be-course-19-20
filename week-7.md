@@ -33,19 +33,21 @@ Before you start you'll probably want to read a bit about **Error handling** **D
 
 ![Topic banner](/assets/banners/topic.jpg)
 
-> Pick two topics from the list below and work on those for your team assessment.
+> Pick one topic from the list below and work on that topic for your team assessment.
 
 #### Synopsis
 
 *   **Homework**
 *   **Time**: 10:00h
-*   **Goals**: subgoal 11,
+*   **Goals**: subgoal 11
 *   **Due**: before week 8
 
 #### Description
-This and next week you'll pick 2 topics (4 in total) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
+This week you'll pick your second topic (2 in total) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
 
-→ List of topics you can pick from for this week
+→ List of topics you can pick from 
+
+> Something not on the list? Pitch a topic to your teacher!
 
 ### Hand-in
 
