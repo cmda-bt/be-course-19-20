@@ -32,10 +32,11 @@ Before you start you'll probably want to read a bit about **Node,** the **JavaSc
 ## Playground
 You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. The below workshoppers are interactive, self guided lesson modules, from [NodeSchool][nodeschool].
 
-* [Learn the basics of Node](https://github.com/workshopper/learnyounode)
-* [How to NPM](https://github.com/workshopper/how-to-npm)
-* [The basics of Express.js](https://github.com/azat-co/expressworks)
-
+* [Learn the basics of Node (workshopper)](https://github.com/workshopper/learnyounode)
+* [How to NPM (workshopper)](https://github.com/workshopper/how-to-npm)
+* [The basics of Express.js (workshopper)](https://github.com/azat-co/expressworks)
+* [freeCodeCamp - Managing Packages with NPM (exercises)](https://www.freecodecamp.org/learn)
+* [freeCodeCamp - Basic Node and Express (exercises)](https://www.freecodecamp.org/learn)
 
 ## Assignments
 

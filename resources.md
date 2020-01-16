@@ -45,6 +45,8 @@
     (**course**) — Learn how to work with data in web applications
 *   🆓 [Express.js resources](https://expressjs.com/en/resources/books-blogs.html)
     (**books**) — Books, blogs, and video tutorials  
+*   🆓 [freeCodeCamp APIs and Microservices](https://expressjs.com/en/resources/books-blogs.html)
+    (**course**) — Basic node and Express Exercises     
     
 
 ## 🛠 Toolbox

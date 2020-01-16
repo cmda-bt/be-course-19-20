@@ -4,7 +4,6 @@
 >
 > — Arthur C. Clarke
 
-
 [![][inspiration-cover]][inspiration-link]
 
 > `dog-ceo-api` by [**@ElliottLandsborough**][inspiration-author].
@@ -27,10 +26,6 @@ Before you start you'll probably want to read a bit about **HTTP,** **Request me
 
 *  [`httpstatuses.com`](https://httpstatuses.com)
 *  [Using middleware in Express.js](https://expressjs.com/en/guide/using-middleware.html)
-
-## Playground
-
-
 
 ## Assignments
 

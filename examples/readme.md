@@ -1,16 +1,25 @@
 # ![Backend - Examples][banner-examples]
 
-## Table of Contents
+## Table of  Contents
+* [Code examples](#code)
+* [Third-party examples](#third-party)
+* [Student examples](#students)
 
-*  [Code examples](#teacher)
-*  [Student examples](#students)
-
-## Code examples
+## Code
+_These are examples that teachers have written, look trough the commits to see the steps._
 * [auth-server](/examples/auth-server)
 * [express-server](/examples/express-server)
 * [mongodb-server](/examples/mongodb-server)
 * [mysql-server](/examples/mysql-server)
 * [plain-server](/examples/plain-server)
+
+## Third-party
+
+_These are small examples found on code sandbox sites like Glitch, Codepen or GitHub gists._
+
+* [Simple MongoDB example](https://glitch.com/~mongodb)
+* [Example app implementing express-session](https://glitch.com/~express-session)
+* [Body-parser example route](https://glitch.com/~body-parser)
 
 ## Students
 > Here are some results from the previous years. **Note**: _The curriculum of this year might have different requirements then the examples shown below_.
