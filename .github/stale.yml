@@ -1,0 +1,10 @@
+# Number of days of inactivity before an issue becomes stale
+daysUntilStale: 10
+# Number of days of inactivity before a stale issue is closed
+daysUntilClose: 5
+# Label to use when marking an issue as stale
+staleLabel: stale
+# Comment to post when marking an issue as stale. Set to `false` to disable
+markComment: >
+  This issue has been automatically marked as stale because it has not had
+  recent activity or was handed in late. It will be closed if no further activity occurs and you won't receive any feedback on this assignment.
