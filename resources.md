@@ -41,6 +41,11 @@
     (**videos**) — Learn how to work with data in web applications.
 *   🆓 [Server-side website programming](https://developer.mozilla.org/en-US/docs/Learn/Server-side)
     (**articles**) — How to create dynamic websites
+*   🆓 [Working with Data and APIs](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X)
+    (**course**) — Learn how to work with data in web applications
+*   🆓 [Express.js resources](https://expressjs.com/en/resources/books-blogs.html)
+    (**books**) — Books, blogs, and video tutorials  
+    
 
 ## 🛠 Toolbox
 *   [HTTP Status Codes](https://httpstatuses.com/)
