@@ -22,15 +22,11 @@
 * Lecture-2
 * Lab-2
 
-## Theory
-
-* [Express.js guide][guide]
-* [Query Parameters in JavaScriopt][query]
-
 ## Playground
 Before you start you'll probably want to read a bit about **Express,** **routing,** and **templating**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help. You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. 
 
 * [Express.js (workshopper)][workshopper]
+* [Frontend vs Backend (article)][back-end]
 * [Unfurl (tool)][unfurl]
 
 
@@ -115,3 +111,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
 
 [unfurl]: https://dfir.blog/unfurl/
+[back-end]: https://zellwk.com/blog/frontend-vs-backend/

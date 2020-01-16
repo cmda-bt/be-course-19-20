@@ -68,6 +68,9 @@ An even better solution is to use a _database as a service_. Instead of having t
 **Sensitive information**  
 > Store sensitive information such as your database URI, password and username in a `.env` using the [`dotenv`](https://www.npmjs.com/package/dotenv) package. Make sure you add the file to your `.gitignore`. If you commit your environment variables it's hard to undo!
 
+**Additional resources**
+* [Hiding API Keys with Environment Variables (dotenv)](env)
+
 ### Storage
 
 ![Storage banner](/assets/banners/storage.jpg)
@@ -153,3 +156,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [multer]: https://www.npmjs.com/package/multer#readme
 [drawings]: https://docs.google.com/drawings
 [session]: https://github.com/expressjs/session
+[env]: https://www.youtube.com/watch?v=17UVejOw3zA&list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X&index=19

@@ -26,7 +26,7 @@ Before you start you'll probably want to read a bit about **Node,** the **JavaSc
 * [_Introduction to Node.js_][intro-node]
 * [_Differences between Node.js and the Browser_][node-browser]
 * [_The V8 JavaScript engine_][v8-engine]
-* [_An introduction to the npm package manager_][npm]
+* [_The Fundamentals - Server Side_][syntax]
 * [_The JavaScript engine visualized_][visual]
 
 ## Playground
@@ -128,3 +128,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [global]: https://nodejs.dev/npm-global-or-local-packages
 [issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
 [visual]: https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf
+[syntax]: https://syntax.fm/show/188/the-fundamentals-server-side
