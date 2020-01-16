@@ -2,7 +2,7 @@
 name: Week 6
 about: Pick one topic from the list below and work on that topic for your team assessment.
 title: Week 6
-labels: 'week-6, topic'
+labels: 'week-6, topic-1'
 ---
 
 # Package
