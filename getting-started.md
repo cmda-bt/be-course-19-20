@@ -5,6 +5,7 @@
 *   [Prerequisites](#prerequisites)
 *   [Installation](#installation)
 *   [Communication](#communication)
+*   [Waiver](#waiver)
 *   [Introduction](#introduction)
 
 ## Prerequisites
@@ -112,6 +113,11 @@ Sign up for our Slack workspace on `cmda-tech.slack.com`. Join the `#backend` ch
 > * Don't use screenshots but link to specific files or snippets in your repo.
 > * Accurately describe your problem and let teachers know which solutions you've  already tried.
 > * Ask questions in the `slackoverflow` channel instead of direct messaging teachers. Other students might have encountered the same problem and found a solution. 
+
+## Waiver
+
+[Google Form Waiver link](https://forms.gle/UeD9u8zyqhUqeAsV8)
+
 
 ## Introduction
 Wow, you did it! Virtual high five! 🖐 Now you can introduce yourself to your teacher and class. Open an issue on our [GitHub issue tracker][issues]. You can pick what are called `issue templates`. Pick the `Introduction` template and fill in the details, then submit.
