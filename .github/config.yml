@@ -1,0 +1,7 @@
+# *Required* Comment to reply with
+requestInfoReplyComment: >
+  Hey! We would appreciate it if you could provide us with all the information asked for in the Issue template!
+
+# Comment to be posted to on first time issues
+newIssueWelcomeComment: >
+  🎉 Thanks for introducing yourself! Please also post a link to your GitHub profile and back-end repository in Brightspace under the assignments.
