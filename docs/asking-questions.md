@@ -8,3 +8,7 @@ If you have technical questions feel free to ask them in our Slack but keep the 
 
 ## Tech Shaming
 If you're answering a question of your fellow student, **never ever tech shame**. Never write a snobby put down of someones technical ability or inferior knowledge for not using or knowing about a piece of technology. **Teachers will enforce our Code of Conduct on our Slack.**
+
+## Watch a video about asking questions
+
+[![Video about asking questions](https://img.youtube.com/vi/0tdIe73ky-4/0.jpg)](https://www.youtube.com/watch?v=0tdIe73ky-4)

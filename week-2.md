@@ -29,6 +29,7 @@ Before you start you'll probably want to read a bit about **Express,** **routing
 * [Frontend vs Backend (article)][back-end]
 * [Unfurl (tool)][unfurl]
 
+[🎦 _Watch a video_ about request and response.][videorequest]
 
 ## Assignments
 
@@ -112,3 +113,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 
 [unfurl]: https://dfir.blog/unfurl/
 [back-end]: https://zellwk.com/blog/frontend-vs-backend/
+[videorequest]: https://www.youtube.com/watch?v=IRQd5DZRRvg

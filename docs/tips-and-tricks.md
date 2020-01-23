@@ -10,6 +10,10 @@ Regardless, students grade this course with a `8`. They find it hard `6/7` but a
 * You experience Imposter Syndrome (detailed below)
 * The Gap (detailed below) between what you have in mind and what you can create is too big
 
+## Watch a video about problem solving
+
+[![Video about problem solving](https://img.youtube.com/vi/XgNHv2sGKQU/0.jpg)](https://www.youtube.com/watch?v=XgNHv2sGKQU)
+
 ### Code competence
 
 > Your confidence is highly correlated with your happiness and because the point where your confidence and capabilities match is the best proxy 

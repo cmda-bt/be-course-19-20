@@ -29,6 +29,9 @@ Before you start you'll probably want to read a bit about **Node,** the **JavaSc
 * [_The Fundamentals - Server Side_][syntax]
 * [_The JavaScript engine visualized_][visual]
 
+[🎦 _Watch a video_ about the browser versus Node.js.][videonode]  
+[🎦 _Watch a video_ about Modules.][videomodule]
+
 ## Playground
 You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. The below workshoppers are interactive, self guided lesson modules, from [NodeSchool][nodeschool].
 
@@ -72,6 +75,9 @@ or [`skin-tone`](https://github.com/sindresorhus/skin-tone/blob/master/package.j
 **Additional resources**
 * [Introduction to NPM Scripts][intro-npm]
 * [Npm global or local packages][global]
+
+[🎦 _Watch a video_ about Node Packages.][videopackage]  
+[🎦 _Watch a demo_ about NPM.][videonpm]   
 
 ### Serve
 
@@ -130,3 +136,8 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
 [visual]: https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf
 [syntax]: https://syntax.fm/show/188/the-fundamentals-server-side
+
+[videonode]: https://www.youtube.com/watch?v=HAE-iYJ8_14
+[videopackage]: https://www.youtube.com/watch?v=jgtXhdxVisw
+[videomodule]: https://www.youtube.com/watch?v=t64md6HAztU
+[videonpm]: https://www.youtube.com/watch?v=tdqXTNqNrr0
