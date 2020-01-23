@@ -10,8 +10,12 @@
 
 ## Prerequisites
 
+> Throughout this course there are additional video's that further explain important topics from lectures but also show you how to install certain technology. Look for a 🎦 emoji!
+
 ### Text Editor
 If you don’t have one yet, install a text editor. It doesn't really matter which one you pick, as long as you feel comfortable using it. However, we do recommend moving away from [Brackets](http://brackets.io/), other editors offer better customizability. [Atom](https://atom.io), [Sublime](https://www.sublimetext.com) and [VSCode](https://code.visualstudio.com/) are good choices. 
+
+[🎦 _Watch a video_ on how to install Text Editors.][videotext]
 
 > Be ware that lecturers may not be able to help you with problems in some editors.
 
@@ -24,6 +28,8 @@ Take some time to set up your [GitHub profile](https://github.com/settings/profi
 Include your name, a profile picture, and a URL to your homepage. Teachers will appreciate it if you upload a representing profile and pick a username that closely resembles your real name. Silly pictures are allowed 🤪
 
 You’re allowed to stay anonymous online for this course by omitting sensitive information, but a good looking GitHub profile can help you get an internship or job later. 
+
+[🎦 _Watch a video_ on how this GitHub organisation works.][videoorg]
 
 ### Brightspace
 
@@ -61,6 +67,8 @@ git config --global user.email "mona@lisa.com"
 
 Use the same email for Git as you used to sign up for GitHub.
 
+[🎦 _Watch a video_ on how to install git.][videogit]
+
 ### Node
 
 Open your **terminal**, and install [nvm](https://github.com/creationix/nvm) like
@@ -88,6 +96,8 @@ node -v # Should print 9.4.0 (or a higher version)
 npm -v # Something like 5.6.0 (or a higher version)
 ```
 
+[🎦 _Watch a video_ on how to install Node.][videonode]
+
 You can use **nvm** to update Node in the future.  npm can update itself
 (`npm install -g npm`).
 
@@ -114,9 +124,13 @@ Sign up for our Slack workspace on `cmda-tech.slack.com`. Join the `#backend` ch
 > * Accurately describe your problem and let teachers know which solutions you've  already tried.
 > * Ask questions in the `slackoverflow` channel instead of direct messaging teachers. Other students might have encountered the same problem and found a solution. 
 
+[🎦 _Watch a video_ on how to ask questions][videoask]
+
 ## Waiver
 
-[Google Form Waiver link](https://forms.gle/UeD9u8zyqhUqeAsV8)
+We’d like to use your work as examples for other students and want to inform you about our Code of Conduct for this course. We enforce our Code of Conduct throughout GitHub but also on our Slack. Do you consent to allow your homework to appear online and did you read our Code of Conduct? 
+
+→ [Google Form waiver](https://forms.gle/UeD9u8zyqhUqeAsV8)
 
 
 ## Introduction
@@ -140,3 +154,9 @@ Each assignment has a different template in which you can hand in your assignmen
 [terminal]: https://github.com/microsoft/terminal
 [notifications]: https://help.github.com/en/github/managing-subscriptions-and-notifications-on-github/configuring-notifications
 [course]: https://courseselector.mijnhva.nl/nl#/CourseSelector/78076118-8f51-e911-a82e-000d3a29a761/2019-2020
+
+[videogit]: https://youtu.be/H51V_-HaR3Y
+[videonode]: https://www.youtube.com/watch?v=ftmJOkHFm1c
+[videotext]: https://www.youtube.com/watch?v=eP78IB5N7ZM
+[videoorg]: https://www.youtube.com/watch?v=MHX-uFQMevQ
+[videoask]: https://www.youtube.com/watch?v=0tdIe73ky-4
