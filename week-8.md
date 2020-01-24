@@ -23,15 +23,15 @@ _This week A2 will take place, you can continue working on your prototype. There
 
 In the lab we'll do a **peer review** by having a look at the assessment checklist and the rubric. After that teachers have time to answer questions.
 
-**A2 checklist:**  
-This is a checklist you can fill-in on the project of your fellow student. It's a good last check to see if everything is in order.
+**A2 review:**  
+This is a peer review document you can fill-in on the project of your fellow student. It's a good last check to see if everything is in order.
 
-→ Checklist
+→ [Review][review]
 
 **A2 rubric:**  
 This is the rubric your teacher will grade you on. Ask yourself upon completion if everything is clear and that you understand each row and column, if not ask your teacher!
 
-→ Rubric
+→ [Rubric][rubric]
 
 **Questions:**  
 Make sure you come to the lab prepared in advance:
@@ -48,7 +48,8 @@ Based on the repository, source code and live version you **present your final a
 
 > This is a team assessment but you'll be graded individually! Each prototype contains an individually recognizable contribution of you based on the learning goals of this course. So, you need to show you worked on something for back-end. For example; you can't just work on the CSS of the project because that was your role. 
 
-→ Read more about assessment 2  
+→ [Read more about assessment 2](/assessments/a2.md)  
+→ [Go to the scheduler on Brightspace][scheduler]
 
 ### Preparation
 
@@ -63,3 +64,7 @@ Make sure you hand-in your work in the assignment on Brightspace
 
 
 [quote-author]: http://mathforum.org/ken/perl_modules.html#document
+
+[rubric]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251300/View
+[review]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251302/View
+[scheduler]: https://dlo.mijnhva.nl/d2l/le/content/32096/Home

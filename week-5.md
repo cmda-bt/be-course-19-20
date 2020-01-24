@@ -22,15 +22,15 @@ _This week A1 will take place, you can continue working on your prototype_.
 
 In the lab we'll do a **peer review** by having a look at the assessment checklist and grading fellow students based on the rubric. After that teachers have time to answer questions.
 
-**A1 checklist:**  
-This is a checklist you can fill-in on the project of your fellow student. It's a good last check to see if everything is in order.
+**A1 review:**  
+This is a peer review document you can fill-in on the project of your fellow student. It's a good last check to see if everything is in order.
 
-→ Checklist
+→ [Review][review]
 
 **A1 rubric:**  
 This is the rubric your teacher will grade you on. Give your fellow student a grade based on the rubric. Ask yourself upon completion if everything is clear and that you understand each row and column, if not ask your teacher!
 
-→ Rubric
+→ [Rubric][rubric]
 
 **Questions:**  
 Make sure you come to the lab prepared in advance:
@@ -46,8 +46,8 @@ Make sure you come to the lab prepared in advance:
 
 Based on your repository, source code and live version you show what feature you've created for back-end. The idea is not to present your feature, a teacher will look through the code and ask questions. By answering questions you demonstrate sufficient knowledge of our goals. This is an individual test, so they will be conducted between one teacher and one student.
 
-→ Read more about assessment 1  
-→ Go to the scheduler on Brightspace
+→ [Read more about assessment 1](/assessments/a1.md)  
+→ [Go to the scheduler on Brightspace][scheduler]
 
 ### Preparation
 
@@ -67,3 +67,7 @@ Make sure you hand-in your work in the assignment on Brightspace
 [inspiration-cover]: /assets/images/samy-is-my-hero.png
 [inspiration-link]: http://samy.pl/popular/
 [inspiration-author]: https://github.com/samyk
+
+[rubric]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251126/View
+[review]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251124/View
+[scheduler]: https://dlo.mijnhva.nl/d2l/le/content/32096/Home

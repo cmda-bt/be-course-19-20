@@ -45,7 +45,7 @@ Before you start you'll probably want to read a bit about **Error handling** **D
 #### Description
 This week you'll pick your second topic (2 in total) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
 
-→ List of topics you can pick from 
+→ [List of topics you can pick from][topics]
 
 > Something not on the list? Pitch a topic to your teacher!
 
@@ -78,3 +78,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [multer]: https://www.npmjs.com/package/multer#readme
 [drawings]: https://docs.google.com/drawings
 [session]: https://github.com/expressjs/session
+[topics]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251675/View
