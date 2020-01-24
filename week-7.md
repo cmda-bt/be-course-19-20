@@ -1,15 +1,14 @@
 # Week 7
 
-> An SSL error has occurred and a secure connection to the server
-> cannot be made.
+> We name & shame Plain-Text Offenders.
 >
-> — [William Shakespeare][quote-author]
-
+> — [@plntxtoffenders][quote-author]
 
 [![][inspiration-cover]][inspiration-link]
 
-> [`qw3rtman/git-fire`][inspiration-link] by
-> [**@qw3rtman**][inspiration-author].
+> [`';--have i been pwned?`][inspiration-link] by
+> [**@troyhunt**][inspiration-author].
+
 
 ## Table of Contents
 
@@ -60,10 +59,10 @@ Mark this assignment as complete by opening an issue on our [GitHub issue tracke
 1. **Feedback:**  
 Let us know what you thought of the homework, what part you spend a lot of time on and give us any feedback. Your project will be reviewed and receive feedback, so expect people to read it, and be ready for tips and tops!
 
-[quote-author]: https://twitter.com/shatterfront/status/816065700577972224
-[inspiration-cover]: assets/images/git-fire.jpg
-[inspiration-link]: https://github.com/qw3rtman/git-fire
-[inspiration-author]: https://github.com/qw3rtman
+[quote-author]: https://twitter.com/plntxtoffenders?lang=en
+[inspiration-cover]: /assets/images/pwned.png
+[inspiration-link]: https://haveibeenpwned.com/About
+[inspiration-author]: https://twitter.com/troyhunt
 
 [pug]: https://pugjs.org/api/getting-started.html
 [ejs]: https://ejs.co/

@@ -1,15 +1,13 @@
 # Week 6
 
-> An SSL error has occurred and a secure connection to the server
-> cannot be made.
+> No Deploy Fridays
 >
-> — [William Shakespeare][quote-author]
-
+> — [@iamdevloper][quote-author]
 
 [![][inspiration-cover]][inspiration-link]
 
-> [`qw3rtman/git-fire`][inspiration-link] by
-> [**@qw3rtman**][inspiration-author].
+> [`Don’t deploy on Fridays, friends`][inspiration-link] by
+> [**@cassidoo**][inspiration-author].
 
 ## Table of Contents
 
@@ -60,10 +58,10 @@ Mark this assignment as complete by opening an issue on our [GitHub issue tracke
 1. **Feedback:**  
 Let us know what you thought of the homework, what part you spend a lot of time on and give us any feedback. Your project will be reviewed and receive feedback, so expect people to read it, and be ready for tips and tops!
 
-[quote-author]: https://twitter.com/shatterfront/status/816065700577972224
-[inspiration-cover]: assets/images/git-fire.jpg
-[inspiration-link]: https://github.com/qw3rtman/git-fire
-[inspiration-author]: https://github.com/qw3rtman
+[quote-author]: https://twitter.com/iamdevloper/status/1108993784132587520
+[inspiration-cover]: assets/images/deploy-tweet.png
+[inspiration-link]: https://twitter.com/cassidoo/status/1154809678607446016?lang=en
+[inspiration-author]: https://twitter.com/cassidoo
 
 [pug]: https://pugjs.org/api/getting-started.html
 [ejs]: https://ejs.co/

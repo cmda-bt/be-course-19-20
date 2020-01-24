@@ -12,6 +12,12 @@
 >
 > — [Ken Williams][quote-author]
 
+[![][inspiration-cover]][inspiration-link]
+
+> [💌 Things I've learned about writing good READMEs][inspiration-link] by
+> [@noffle][inspiration-author].
+
+
 ## Table of Contents
 *  [Review](#review)
 *  [Assessment](#assesment)
@@ -64,6 +70,9 @@ Make sure you hand-in your work in the assignment on Brightspace
 
 
 [quote-author]: http://mathforum.org/ken/perl_modules.html#document
+[inspiration-cover]: assets/images/readme.png
+[inspiration-link]: https://github.com/noffle/art-of-readme
+[inspiration-author]: https://github.com/noffle
 
 [rubric]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251300/View
 [review]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251302/View
