@@ -12,4 +12,8 @@ app.set("views", path.join(__dirname, "views"));
 
 app.get("/", (req, res) => res.render("pages/index"));
 
+app.use(function (req, res) {
+	res.status(404).render("pages/404");
+});
+
 app.listen(3000);
