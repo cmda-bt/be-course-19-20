@@ -17,8 +17,8 @@
 *  [Hand in](#hand-in)
 
 ## Slides
-* Lecture-1
-* Lab-1
+* [Lecture-1][lec1]
+* [Lab-1][lab1]
 
 ## Theory
 Before you start you'll probably want to read a bit about **Node,** the **JavaScript engine,** and **client vs. server-side**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help.
@@ -141,3 +141,6 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [videopackage]: https://www.youtube.com/watch?v=jgtXhdxVisw
 [videomodule]: https://www.youtube.com/watch?v=t64md6HAztU
 [videonpm]: https://www.youtube.com/watch?v=tdqXTNqNrr0
+
+[lec1]: https://docs.google.com/presentation/d/1AWgmnGm01dVbg05TtO8RA8R87B4AsKLifyrxJ7R0Nxk/edit?usp=sharing
+[lab1]: https://docs.google.com/presentation/d/13qaPu2DRkn3Yo-cjhx03uNhxis1A6vXDTEYj6xf5mJU/edit?usp=sharing
