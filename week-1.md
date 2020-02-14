@@ -133,7 +133,7 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [nodeschool]: https://nodeschool.io/
 [intro-npm]: https://www.freecodecamp.org/news/introduction-to-npm-scripts-1dbb2ae01633/
 [global]: https://nodejs.dev/npm-global-or-local-packages
-[issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
+[issues]: https://github.com/cmda-bt/be-course-19-20/issues/new/choose
 [visual]: https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf
 [syntax]: https://syntax.fm/show/188/the-fundamentals-server-side
 
