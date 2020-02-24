@@ -19,8 +19,8 @@
 *  [Hand in](#hand-in)
 
 ## Slides
-* Lecture-2
-* Lab-2
+* [Lecture-2][lec2]
+* [Lab-2][lab2]
 
 ## Playground
 Before you start you'll probably want to read a bit about **Express,** **routing,** and **templating**. We'll cover this in the lecture but make sure you fully understand these concept, the resources below can help. You can do these exercises before you start working on the assignments to get comfortable with the topics covered in class. 
@@ -114,3 +114,6 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [unfurl]: https://dfir.blog/unfurl/
 [back-end]: https://zellwk.com/blog/frontend-vs-backend/
 [videorequest]: https://www.youtube.com/watch?v=IRQd5DZRRvg
+
+[lec2]: https://docs.google.com/presentation/d/1DpbojQMJQzRtl9aN74uQmEfLufCAeCDgEzV1-5oue04/edit?usp=sharing
+[lab2]: https://docs.google.com/presentation/d/1DM7uDHM47PPvr3qjULJF-9qeP8StxW-BS8sSZWMLzYQ/edit?usp=sharing
