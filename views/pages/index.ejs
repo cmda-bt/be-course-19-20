@@ -7,8 +7,15 @@
 
 <body>
   <% include ../partials/nav %>
-  
+
   <h1>Hello World!</h1>
+  
+  <button id="getUserLocationTrigger">Get location</button>
+
+  <form method="">
+    <input id="userLocation" type="hidden" name="userLocation">
+    <button id="submitUserLocation" type="submit" disabled>submit</button>
+  </form>
 
   <% include ../partials/footer %>
 </body>
