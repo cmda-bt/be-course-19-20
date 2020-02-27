@@ -36,11 +36,10 @@ function getCustomLocation(e) {
 
             // only first 5 maps of results
             if (index < 5) {
-                const location = { latitude: x.latitude, longitude: x.longitude }
-                const stringified = stringify(location)
+                const location = stringify({ latitude: x.latitude, longitude: x.longitude })
 
                 // renders suggestions
-                customLocationSuggestions.insertAdjacentHTML('beforeend', `<button class="locationSuggestion" data-location='${stringified}'>${x.woonplaats}</button>`)
+                customLocationSuggestions.insertAdjacentHTML('beforeend', `<button class="locationSuggestion" data-location='${location}'>${x.woonplaats}</button>`)
             }
         })
 
@@ -83,7 +82,12 @@ function disableLocation() {
 function storeLocation(location) {
 
     // store data in input hidden field
-    addValueToInput(storeUserLocation, stringify(location))
+    if (typeof (location) === 'string') {
+        addValueToInput(storeUserLocation, location)
+    }
+    else {
+        addValueToInput(storeUserLocation, stringify(location))
+    }
 
     // enable submit button
     submitUserLocationForm.disabled = false

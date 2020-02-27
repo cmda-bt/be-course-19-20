@@ -148,8 +148,7 @@ app.get("/", (req, res) => res.render("pages/index"));
 app.post("/", async function (req, res) {
 
 	// get user location from form input field
-	// why do I have to parse this twice?
-	const userLocation = JSON.parse(JSON.parse(req.body.userLocation))
+	const userLocation = JSON.parse(req.body.userLocation)
 
 	// render new page with received data
 	res.render("pages/matches", { location: userLocation, matches: matches });
