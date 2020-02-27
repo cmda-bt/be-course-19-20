@@ -48,8 +48,8 @@ function getCustomLocation(e) {
         const HTMLCollectionToArray = Array.from(locationSuggestions)
 
         // loop over classes
-        HTMLCollectionToArray.map((x, index) => {
-           
+        HTMLCollectionToArray.map((x) => {
+
             // create eventListener for buttons
             x.addEventListener('click', suggestedLocationTrigger);
         })
