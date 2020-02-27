@@ -7,10 +7,12 @@ const submitUserLocationForm = document.getElementById('submitUserLocation')
 const customLocationTrigger = document.getElementById('getCustomLocation')
 const customLocationSuggestions = document.getElementById('customLocationSuggestions')
 const locationSuggestions = document.getElementsByClassName('locationSuggestion')
+const disableUserLocation = document.getElementById('disableUserLocation')
 
 // listen to button click
 userTrigger.addEventListener('click', getLocationTrigger)
 customLocationTrigger.addEventListener('keydown', getCustomLocation)
+disableUserLocation.addEventListener('click', disableLocation)
 
 
 // gets triggered when custom location input is getting filled
@@ -68,6 +70,13 @@ function suggestedLocationTrigger(e) {
 
     // stores location in hidden input
     storeLocation(location)
+}
+
+// gets triggered when disableUserLocation is clicked
+function disableLocation() {
+
+    // stores location in hidden input
+    storeLocation(false)
 }
 
 // store location in hidden input
