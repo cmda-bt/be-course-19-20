@@ -1,4 +1,4 @@
-import originalCityData from '/originalCityData.js'
+import originalCityData from './data/originalCityData.js'
 
 // store unique items in this array
 let newArray = []

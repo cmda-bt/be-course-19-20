@@ -1,4 +1,4 @@
-import cleanedCityData from '/cleanedCityData.js'
+import cleanedCityData from './data/cleanedCityData.js'
 
 const userTrigger = document.getElementById("getUserLocationTrigger")
 const storeUserLocation = document.getElementById("userLocation")
