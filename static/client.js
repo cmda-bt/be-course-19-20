@@ -1,4 +1,5 @@
 import cleanedCityData from './data/cleanedCityData.js'
+import { userLocation, stringify, upperCaseCorrection, removeFromDOM, addValueToInput } from './modules/helper.js';
 
 const userTrigger = document.getElementById("getUserLocationTrigger")
 const storeUserLocation = document.getElementById("userLocation")
@@ -10,14 +11,6 @@ const locationSuggestions = document.getElementsByClassName('locationSuggestion'
 // listen to button click
 userTrigger.addEventListener('click', getLocationTrigger)
 customLocationTrigger.addEventListener('keydown', getCustomLocation)
-
-// gets triggered when Get Location button is clicked
-async function getLocationTrigger(e) {
-    const getLocation = await userLocation()
-
-    // stores location in hidden input
-    storeLocation(getLocation)
-}
 
 
 // gets triggered when custom location input is getting filled
@@ -31,13 +24,13 @@ function getCustomLocation(e) {
     if (correctedInputValue.length > 1 && !preventKeys.includes(e.key)) {
 
         // filter all results of json data with the typed value
-        const results = cleanedCityData.filter(item => item.woonplaats.includes(correctedInputValue));
+        const filteredData = cleanedCityData.filter(item => item.woonplaats.includes(correctedInputValue));
 
         // removes previous suggestions
-        clearSuggestions()
+        removeFromDOM(customLocationSuggestions)
 
         // loop over filtered result
-        results.map((x, index) => {
+        filteredData.map((x, index) => {
 
             // only first 5 maps of results
             if (index < 5) {
@@ -68,10 +61,10 @@ function suggestedLocationTrigger(e) {
     const location = e.target.dataset.location
 
     // gives feedback to user, shows what is clicked in input
-    customLocationTrigger.value = e.target.innerText
+    addValueToInput(customLocationTrigger, e.target.innerText)
 
     // removes suggestions
-    clearSuggestions()
+    removeFromDOM(customLocationSuggestions)
 
     // stores location in hidden input
     storeLocation(location)
@@ -81,47 +74,16 @@ function suggestedLocationTrigger(e) {
 function storeLocation(location) {
 
     // store data in input hidden field
-    storeUserLocation.value = stringify(location)
+    addValueToInput(storeUserLocation, stringify(location))
 
     // enable submit button
     submitUserLocationForm.disabled = false
 }
 
-// get user location from GEO API
-async function userLocation() {
+// gets triggered when Get Location button is clicked
+async function getLocationTrigger() {
+    const getLocation = await userLocation()
 
-    // waits for GEO location api to resolve promise
-    const data = await new Promise((resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject);
-    });
-
-    return { latitude: data.coords.latitude, longitude: data.coords.longitude }
+    // stores location in hidden input
+    storeLocation(getLocation)
 }
-
-// converts data to JSON
-function stringify(data) {
-    return JSON.stringify(data)
-}
-
-// converts JSON to data 
-function parse(json) {
-    return JSON.parse(json)
-}
-
-// converts input to Uppercase first word letters
-function upperCaseCorrection(input) {
-    // source: https://stackoverflow.com/a/4878800
-    const newInput = input.toLowerCase()
-        .split(' ')
-        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
-        .join(' ');
-
-    return newInput
-}
-
-// removes suggestions
-function clearSuggestions() {
-    customLocationSuggestions.innerHTML = ""
-}
-
-
