@@ -9,7 +9,7 @@
   <% include ../partials/nav %>
 
   <h1>Hello World!</h1>
-  
+
   <input id="getCustomLocation" type="text">
   <section id="customLocationSuggestions">
   </section>
@@ -18,7 +18,7 @@
 
   <button id="disableUserLocation">Don't share location</button>
 
-  <form method="">
+  <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
     <input id="userLocation" type="hidden" name="userLocation">
     <button id="submitUserLocation" type="submit" disabled>submit</button>
   </form>
