@@ -9,21 +9,26 @@
   <% include ../partials/nav %>
 
   <h1>Hello World!</h1>
-
-  <input id="getCustomLocation" type="text">
-  <section id="customLocationSuggestions">
-  </section>
-
-  <button id="getUserLocationTrigger">Get location</button>
-
-  <button id="disableUserLocation">Don't share location</button>
+  
+  <% if(typeof(message) !== "undefined") { %>
+    <p><%= message %></p>
+  <% } %>
 
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
+    <input id="getCustomLocation" type="text" name="userInput">
+    <section class="suggestions">
+      <% if(typeof(results) !== "undefined") { %>
+        <% results.map(item => { %>
+          <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">   
+          <label for="<%= item.woonplaats %>"><%= item.woonplaats %></label>
+        <% }) %>
+      <% } %>
+    </section>
     <input id="userLocation" type="hidden" name="userLocation">
-    <button id="submitUserLocation" type="submit" disabled>submit</button>
+    <button id="submitUserLocation" type="submit">submit</button>
   </form>
 
-  <script src="../client.js" type="module"></script>
+  <!-- <script src="../client.js" type="module"></script> -->
   <% include ../partials/footer %>
 </body>
 
