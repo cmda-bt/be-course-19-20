@@ -1,18 +1,18 @@
-import cleanedCityData from './data/cleanedCityData.js'
+import cityData from './data/onlyCityData.js'
 import { userLocation, stringify, upperCaseCorrection, removeFromDOM, addValueToInput } from './modules/helper.js';
 
 const userTrigger = document.getElementById("getUserLocationTrigger")
 const storeUserLocation = document.getElementById("userLocation")
 const submitUserLocationForm = document.getElementById('submitUserLocation')
 const customLocationTrigger = document.getElementById('getCustomLocation')
-const customLocationSuggestions = document.getElementById('customLocationSuggestions')
-const locationSuggestions = document.getElementsByClassName('locationSuggestion')
+const locationSuggestions = document.getElementById('locationSuggestions')
+// const locationSuggestions = document.getElementsByClassName('locationSuggestion')
 const disableUserLocation = document.getElementById('disableUserLocation')
 
 // listen to button click
-userTrigger.addEventListener('click', getLocationTrigger)
+// userTrigger.addEventListener('click', getLocationTrigger)
 customLocationTrigger.addEventListener('keydown', getCustomLocation)
-disableUserLocation.addEventListener('click', disableLocation)
+// disableUserLocation.addEventListener('click', disableLocation)
 
 
 // gets triggered when custom location input is getting filled
@@ -26,20 +26,21 @@ function getCustomLocation(e) {
     if (correctedInputValue.length > 1 && !preventKeys.includes(e.key)) {
 
         // filter all results of json data with the typed value
-        const filteredData = cleanedCityData.filter(item => item.woonplaats.includes(correctedInputValue));
+        const filteredData = cityData.filter(item => item.includes(correctedInputValue));
 
         // removes previous suggestions
-        removeFromDOM(customLocationSuggestions)
+        removeFromDOM(locationSuggestions)
 
         // loop over filtered result
         filteredData.map((x, index) => {
 
             // only first 5 maps of results
             if (index < 5) {
-                const location = stringify({ latitude: x.latitude, longitude: x.longitude })
 
                 // renders suggestions
-                customLocationSuggestions.insertAdjacentHTML('beforeend', `<button class="locationSuggestion" data-location='${location}'>${x.woonplaats}</button>`)
+                locationSuggestions.insertAdjacentHTML('beforeend', `
+                    <input type="radio" id="${x}" name="userSuggestion" value="${x}">   
+                    <label for="${x}">${x}</label>`)
             }
         })
 
@@ -65,7 +66,7 @@ function suggestedLocationTrigger(e) {
     addValueToInput(customLocationTrigger, e.target.innerText)
 
     // removes suggestions
-    removeFromDOM(customLocationSuggestions)
+    removeFromDOM(locationSuggestions)
 
     // stores location in hidden input
     storeLocation(location)
