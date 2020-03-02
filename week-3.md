@@ -17,8 +17,8 @@
 *  [Hand in](#hand-in)
 
 ## Slides
-* Lecture-3
-* Lab-3
+* [Lecture-3][lec3]
+* [Lab-3][lab3]
 
 ## Theory
 
@@ -79,6 +79,9 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [inspiration-cover]: assets/images/dog-ceo.png
 [inspiration-link]: https://dog.ceo
 [inspiration-author]: https://github.com/ElliottLandsborough
+
+[lec3]: https://docs.google.com/presentation/d/1PJTtYNOFw8n9Zr54kBiabNpb777QDMNJIFt0bKVR__Q/edit?usp=sharing
+[lab3]: https://docs.google.com/presentation/d/1QGHL9HbljJu1U29ASBe_CGb2AQ35yoIK6JB6C9O_bsI/edit?usp=sharing
 
 
 [pug]: https://pugjs.org/api/getting-started.html
