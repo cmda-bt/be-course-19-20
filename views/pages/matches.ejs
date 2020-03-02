@@ -9,9 +9,15 @@
     <% include ../partials/nav %>
     <h1>Matches</h1>
 
-    <% console.log(location) %>
-
-    <% console.log(matches) %>
+    <% for (let [key, value] of Object.entries(matches)) {%>
+        <% for (let [nestedKey, nestedValue] of Object.entries(value)) {%>
+            <% console.log(nestedValue)%>
+            <p><%= nestedValue.name %></p>
+            <p>age: <%= nestedValue.age %></p>
+            <p class="macthLocation" data-location="<%= JSON.stringify(nestedValue.location) %>">No location</p>
+            <img src="<%= nestedValue.image %>" alt="a picture of <%= nestedValue.name %>">
+        <% } %>
+    <% } %>
 
     <% include ../partials/footer %>
 </body>
