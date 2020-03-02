@@ -8,7 +8,7 @@ originalCityData.map((x, index) => {
 
     // check if value is equal to eachother
     const searchValue = newArrayItem => {
-        return newArrayItem.woonplaats === x.woonplaats;
+        return newArrayItem === x.woonplaats;
     }
     
     // if map is at last loop
@@ -20,7 +20,7 @@ originalCityData.map((x, index) => {
     if (!newArray.find(searchValue)) {
 
         // push unique item in newArray
-        newArray.push(x)
+        newArray.push(x.woonplaats)
         return
     }
     return
