@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
+const cityData = require('./static/data/cleanedCityData.json');
 
 const festivals = [{
 	id: 'ncpcg35n3y',
@@ -167,12 +168,58 @@ app.get("/", (req, res) => res.render("pages/index"));
 
 app.post("/", async function (req, res) {
 
-	// get user location from form input field
-	const userLocation = JSON.parse(req.body.userLocation)
+	// search for 1 specific value
+	function findExactCityData(value) {
+		return cityData.find(item => item.woonplaats === value)
+	}
 
-	// render new page with received data
-	res.render("pages/matches", { location: userLocation, matches: matches });
+	// search for multiple matching values
+	function findFilteredCityData(value) {
+		return cityData.filter(item => item.woonplaats.includes(value));
+	}
+	
+	// if user selected a suggestion
+	if (req.body.userSuggestion) {
+		console.log(findExactCityData(req.body.userSuggestion));
+	}
+
+	// if user did not select a suggestion
+	else {
+		const userInput = upperCaseCorrection(req.body.userInput)
+		const filteredData = findFilteredCityData(userInput)
+
+		// search for 1 specific value
+		if (findExactCityData(userInput)) {
+			console.log(findExactCityData(userInput));
+		}
+
+		// there is not 1 specific match
+		else {
+
+			// if there are no matches with the input
+			if (filteredData.length === 0) {
+				res.render("pages/index", { message: `Wij konden ${userInput} niet vinden, probeer een stad in te typen `});
+			}
+
+			// if there are matches with the input
+			else{
+				const reducedResults = filteredData.slice(0,  5)
+				res.render("pages/index", { results: reducedResults, message: `Wij konden ${userInput} niet vinden, bedoelde je misschien:`});
+			}
+		}
+	}
 })
+
+// converts input to Uppercase first word letters
+function upperCaseCorrection(input) {
+    // source: https://stackoverflow.com/a/4878800
+    const newInput = input.toLowerCase()
+        .split(' ')
+        .map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+        .join(' ');
+
+    return newInput
+}
 
 app.use(function (req, res) {
 	res.status(404).render("pages/404");
