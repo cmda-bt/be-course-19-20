@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
 const cityData = require('./static/data/cleanedCityData.json');
+const slug = require('slug')
+
 
 const festivals = [{
 	id: 'ncpcg35n3y',
@@ -180,7 +182,8 @@ app.post("/", async function (req, res) {
 	
 	// if user selected a suggestion
 	if (req.body.userSuggestion) {
-		console.log(findExactCityData(req.body.userSuggestion));
+		console.log('slug');
+		console.log(slug(req.body.userSuggestion));
 	}
 
 	// if user did not select a suggestion
