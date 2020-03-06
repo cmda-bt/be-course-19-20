@@ -15,8 +15,16 @@
   <% } %>
 
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
-    <input id="getCustomLocation" type="text" name="userInput">
-    <section class="suggestions">
+    <section id="locationInputTypes">
+      <input id="getCustomLocation" type="text" name="userInput" autocomplete="off">
+
+      <input type="checkbox" id="noLocation" name="userSuggestion" value="noLocation">   
+      <label for="noLocation">No location</label>
+
+      <input id="userLocation" type="hidden" name="userLocation">
+    </section>
+
+    <section id="locationSuggestions">
       <% if(typeof(results) !== "undefined") { %>
         <% results.map(item => { %>
           <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">   
@@ -24,11 +32,10 @@
         <% }) %>
       <% } %>
     </section>
-    <input id="userLocation" type="hidden" name="userLocation">
     <button id="submitUserLocation" type="submit">submit</button>
   </form>
 
-  <!-- <script src="../client.js" type="module"></script> -->
+  <script src="../client.js" type="module"></script>
   <% include ../partials/footer %>
 </body>
 
