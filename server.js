@@ -180,10 +180,20 @@ app.post("/", async function (req, res) {
 		return cityData.filter(item => item.woonplaats.includes(value));
 	}
 	
+	// user  provided  location with GEO API
+	if (req.body.userLocation) {
+		const userGeoAPILocation = JSON.parse(req.body.userLocation)
+		const {latitude, longitude} = userGeoAPILocation
+		console.log(latitude, longitude);
+		return
+	}
+
 	// if user selected a suggestion
 	if (req.body.userSuggestion) {
-		console.log('slug');
-		console.log(slug(req.body.userSuggestion));
+		// destructuring source : https://wesbos.com/destructuring-objects/
+		const { latitude, longitude } = findExactCityData(req.body.userSuggestion);
+		console.log(latitude, longitude);
+		return
 	}
 
 	// if user did not select a suggestion
@@ -194,6 +204,7 @@ app.post("/", async function (req, res) {
 		// search for 1 specific value
 		if (findExactCityData(userInput)) {
 			console.log(findExactCityData(userInput));
+			return
 		}
 
 		// there is not 1 specific match
@@ -202,12 +213,15 @@ app.post("/", async function (req, res) {
 			// if there are no matches with the input
 			if (filteredData.length === 0) {
 				res.render("pages/index", { message: `Wij konden ${userInput} niet vinden, probeer een stad in te typen `});
+				return
 			}
 
 			// if there are matches with the input
 			else{
 				const reducedResults = filteredData.slice(0,  5)
+
 				res.render("pages/index", { results: reducedResults, message: `Wij konden ${userInput} niet vinden, bedoelde je misschien:`});
+				return
 			}
 		}
 	}
