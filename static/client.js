@@ -1,19 +1,23 @@
 import cityData from './data/onlyCityData.js'
 import { userLocation, stringify, upperCaseCorrection, removeFromDOM, addValueToInput } from './modules/helper.js';
 
-const userTrigger = document.getElementById("getUserLocationTrigger")
 const storeUserLocation = document.getElementById("userLocation")
 const submitUserLocationForm = document.getElementById('submitUserLocation')
 const customLocationTrigger = document.getElementById('getCustomLocation')
 const locationSuggestions = document.getElementById('locationSuggestions')
-// const locationSuggestions = document.getElementsByClassName('locationSuggestion')
-const disableUserLocation = document.getElementById('disableUserLocation')
+const locationFormInputs = document.getElementById('locationInputTypes')
+
+function setGeoLocationButtonInForm() {
+    locationFormInputs.insertAdjacentHTML('afterbegin', `
+       <button id="getUserLocationByGeoAPI">GEO API</button> 
+    `)
+
+    document.getElementById('getUserLocationByGeoAPI').addEventListener('click', getLocationTrigger);
+}
+setGeoLocationButtonInForm()
 
 // listen to button click
-// userTrigger.addEventListener('click', getLocationTrigger)
 customLocationTrigger.addEventListener('keydown', getCustomLocation)
-// disableUserLocation.addEventListener('click', disableLocation)
-
 
 // gets triggered when custom location input is getting filled
 function getCustomLocation(e) {
@@ -72,31 +76,30 @@ function suggestedLocationTrigger(e) {
     storeLocation(location)
 }
 
-// gets triggered when disableUserLocation is clicked
-function disableLocation() {
-
-    // stores location in hidden input
-    storeLocation(false)
-}
-
 // store location in hidden input
 function storeLocation(location) {
 
     // store data in input hidden field
-    if (typeof (location) === 'string') {
-        addValueToInput(storeUserLocation, location)
-    }
-    else {
-        addValueToInput(storeUserLocation, stringify(location))
-    }
+    addValueToInput(storeUserLocation, stringify(location))
 
-    // enable submit button
-    submitUserLocationForm.disabled = false
+    console.log('API data is added');
 }
 
 // gets triggered when Get Location button is clicked
-async function getLocationTrigger() {
+async function getLocationTrigger(e) {
+
+    //prevents form from submitting
+    e.preventDefault()
+
+    submitUserLocationForm.disabled = true
+
+    // fetch Geo Location
     const getLocation = await userLocation()
+
+    .then((x)=>{
+        // enable submit button
+        submitUserLocationForm.disabled = false 
+        return x})
 
     // stores location in hidden input
     storeLocation(getLocation)
