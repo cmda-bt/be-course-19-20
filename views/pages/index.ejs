@@ -7,9 +7,35 @@
 
 <body>
   <% include ../partials/nav %>
-  
-  <h1>Hello World!</h1>
 
+  <h1>Hello World!</h1>
+  
+  <% if(typeof(message) !== "undefined") { %>
+    <p><%= message %></p>
+  <% } %>
+
+  <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
+    <section id="locationInputTypes">
+      <input id="getCustomLocation" type="text" name="userInput" autocomplete="off">
+
+      <input type="checkbox" id="noLocation" name="userSuggestion" value="noLocation">   
+      <label for="noLocation">No location</label>
+
+      <input id="userLocation" type="hidden" name="userLocation">
+    </section>
+
+    <section id="locationSuggestions">
+      <% if(typeof(results) !== "undefined") { %>
+        <% results.map(item => { %>
+          <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">   
+          <label for="<%= item.woonplaats %>"><%= item.woonplaats %></label>
+        <% }) %>
+      <% } %>
+    </section>
+    <button id="submitUserLocation" type="submit">submit</button>
+  </form>
+
+  <script src="../client.js" type="module"></script>
   <% include ../partials/footer %>
 </body>
 

@@ -2,9 +2,9 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "index",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,10 @@
   "homepage": "https://github.com/RobinStut/be-course-19-20#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
+    "ejs": "^2.7.4",
+    "express": "^4.17.1",
     "nodemon": "^1.18.10",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "slug": "^2.1.1"
   }
 }

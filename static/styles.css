@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 3.5rem;
+    background-color: #131313;
+    display: flex;
+    align-items: center;
+  }
+  .menu-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2em;
+  }
+  .menu-list__item.menu-list__logo {
+    line-height: 0;
+    vertical-align: middle;
+    margin-right: auto;
+  }
+  .menu-list__logo .menu-list__anchor {
+    width: 1rem;
+  }
+  .menu-list__item {
+    list-style: none;
+    display: inline-flex;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    margin-right: 1rem;
+  }
+  .menu-list__anchor {
+    text-decoration: none;
+    color: #fff;
+  }
+
+
+.profile_image {
+    background-color:grey;
+    max-width: 100%;
+    position: absolute;
+    width: 4em;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile_image-container {
+    display: block;
+    position: relative;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
