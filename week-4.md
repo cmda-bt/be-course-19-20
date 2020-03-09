@@ -20,7 +20,7 @@
 *  [Hand in](#hand-in)
 
 ## Slides
-* Lecture-4
+* [Lecture-4][lec4]
 * Lab-4
 
 ## Theory
@@ -157,3 +157,4 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [drawings]: https://docs.google.com/drawings
 [session]: https://github.com/expressjs/session
 [env]: https://www.youtube.com/watch?v=17UVejOw3zA&list=PLRqwX-V7Uu6YxDKpFzf_2D84p0cyk4T7X&index=19
+[lec4]: https://docs.google.com/presentation/d/1J0SVcx7rMnFp37JqsQMHQq92EfBRUFdgSAj5i9wQKjg/edit?usp=sharing
