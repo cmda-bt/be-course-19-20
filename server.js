@@ -61,7 +61,7 @@ app.post("/", async function (req, res) {
 	}
 
 	// if user selected a suggestion
-	if (req.body.userSuggestion) {
+	else if (req.body.userSuggestion) {
 		// destructuring source : https://wesbos.com/destructuring-objects/
 		const { latitude, longitude } = findExactCityData(req.body.userSuggestion);
 		console.log(latitude, longitude);
