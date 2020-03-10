@@ -9,7 +9,7 @@ require('dotenv').config()
 
 const uri = process.env.MONGO_URI
 
-async function callDb(){
+async function findInDb(collection, searchValue){
 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
  
@@ -18,9 +18,8 @@ async function callDb(){
 
 		const db = client.db('db');
 
-		const festivals = await db.collection('festivals').find({}).toArray();
-		console.log(festivals);
-		
+		const festivals = await db.collection(collection).find(searchValue).toArray();
+		return festivals	
  
     } catch (e) {
         console.error(e);
