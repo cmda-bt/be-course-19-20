@@ -6,6 +6,7 @@ const session = require("express-session");
 const dateFormat = require('dateformat');
 
 // modules
+const cityData = require('./static/data/cleanedCityData.json');
 const mongo = require('./modules/mongo');
 const calcDistance = require('./modules/calculateDistance');
 const parseText = require('./modules/parseText')
