@@ -26,7 +26,16 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 //get
-app.get("/", (req, res) => res.render("pages/index"));
+app.get("/", async (req, res) => {
+
+	// this has to be set after login, now it's hardcoded
+	req.session._id = '5e67a328ad68fa647500239c'
+
+	const dbData = await mongo.findOneInDb('fakeUsers', req.session._id)
+	const {timestamp} = dbData[0].location
+
+	res.render("pages/index", {lastUpdateTime: dateFormat(timestamp)})
+})
 
 // post
 app.post("/", async function (req, res) {
