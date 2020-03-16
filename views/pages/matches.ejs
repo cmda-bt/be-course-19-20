@@ -12,7 +12,9 @@
     <% for (let [key, value] of Object.entries(matches)) {%>
         <p><%= value.name %></p>
         <p>age: <%= value.age %></p>
-        <p class="macthLocation"><%= value.location %>km</p>
+        <% if(value.location) { %>
+            <p class="macthLocation"><%= value.location %>km</p>
+        <% } %>
         <img src="<%= value.image %>" alt="a picture of <%= value.name %>">
     <% } %>
 
