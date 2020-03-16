@@ -3,7 +3,6 @@ const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
 const session = require("express-session");
-const dateFormat = require('dateformat');
 
 // modules
 const mongo = require('./modules/mongo');
