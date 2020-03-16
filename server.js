@@ -6,10 +6,10 @@ const session = require("express-session");
 const dateFormat = require('dateformat');
 
 // modules
-const cityData = require('./static/data/cleanedCityData.json');
 const mongo = require('./modules/mongo');
-const calcDistance = require('./modules/calculateDistance');
 const parseText = require('./modules/parseText')
+const render = require('./modules/render')
+const findCityData = require('./modules/findCityData')
 
 // use
 app.use(bodyParser.json());
@@ -26,99 +26,40 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 
 //get
-app.get("/", async (req, res) => {
-
-	// this has to be set after login, now it's hardcoded
-	req.session._id = '5e67a328ad68fa647500239c'
-
-	const dbData = await mongo.findOneInDb('fakeUsers', req.session._id)
-	const {timestamp} = dbData[0].location
-
-	res.render("pages/index", {lastUpdateTime: dateFormat(timestamp)})
-})
+app.get("/", render.renderIndex)
+app.get("/matches", render.renderMatches)
 
 // post
 app.post("/", async function (req, res) {
 
-	const dbData = await mongo.findInDb('fakeUsers')
-
-	// search for 1 specific value
-	function findExactCityData(value) {
-		return cityData.find(item => item.woonplaats === value)
-	}
-
-	// search for multiple matching values
-	function findFilteredCityData(value) {
-		return cityData.filter(item => item.woonplaats.includes(value));
-	}
+	let newLocation
 
 	// user  provided  location with GEO API
 	if (req.body.userLocation) {
 		const userGeoAPILocation = JSON.parse(req.body.userLocation)
+		
 		const { latitude: userLat, longitude: userLong } = userGeoAPILocation
-
-		const newLocation = {location:{userLat, userLong, timestamp: Date.now()}}
-
-		mongo.updateOne('fakeUsers', '5e67a328ad68fa647500239c', { $set: newLocation })
-
-		const newData = dbData.map(dbResult => {
-			const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
-			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
-		})
-
-		newData.sort(function (a, b) {
-			return a.location - b.location;
-		  });
-
-		res.render("pages/matches", { matches: newData });
-
-		return
+		newLocation = { location: { latitude: userLat, longitude: userLong, timestamp: Date.now() } }
 	}
 
 	// if user selected a suggestion
 	else if (req.body.userSuggestion) {
 		// destructuring source : https://wesbos.com/destructuring-objects/
-		const { latitude: userLat, longitude: userLong } = findExactCityData(req.body.userSuggestion);
+		const { latitude: userLat, longitude: userLong } = findCityData.findExactCityData(req.body.userSuggestion);
+		newLocation = { location: { latitude: userLat, longitude: userLong, timestamp: Date.now() } }
 
-		
-
-		const newData = dbData.map(dbResult => {
-			const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
-			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
-		})
-
-		newData.sort(function (a, b) {
-			return a.location - b.location;
-		  });
-
-		res.render("pages/matches", { matches: newData });
-
-
-		return
 	}
 
 	// if user did not select a suggestion
 	else {
 		const userInput = parseText.upperCaseCorrection(req.body.userInput)
-		const filteredData = findFilteredCityData(userInput)
+		const filteredData = findCityData.findFilteredCityData(userInput)
 
 		// search for 1 specific value
-		if (findExactCityData(userInput)) {
+		if (findCityData.findExactCityData(userInput)) {
 
-			const {latitude: userLat, longitude: userLong} = findExactCityData(userInput)
-
-			const newData = dbData.map(dbResult => {
-				const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
-				return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
-			})
-
-			newData.sort(function (a, b) {
-				return a.location - b.location;
-			  });
-	
-			res.render("pages/matches", { matches: newData });
-
-			return
+			const { latitude: userLat, longitude: userLong } = findCityData.findExactCityData(userInput)
+			newLocation = { location: { latitude: userLat, longitude: userLong, timestamp: Date.now() } }
 		}
 
 		// there is not 1 specific match
@@ -139,6 +80,9 @@ app.post("/", async function (req, res) {
 			}
 		}
 	}
+	mongo.updateOne('fakeUsers', req.session._id, { $set: newLocation })
+
+	render.renderIndex(req, res)
 })
 
 app.use(function (req, res) {
