@@ -2,7 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const app = express();
 const path = require("path");
-const cityData = require('./static/data/cleanedCityData.json');
+const session = require("express-session");
+const dateFormat = require('dateformat');
 
 // modules
 const mongo = require('./modules/mongo');
@@ -13,6 +14,11 @@ const parseText = require('./modules/parseText')
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "./static")));
+app.use(session({
+	resave: false,
+	saveUninitialized: true,
+	secret: process.env.SESSION
+}))
 
 // set
 app.set("view engine", "ejs");
