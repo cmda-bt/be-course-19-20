@@ -74,7 +74,16 @@ app.post("/", async function (req, res) {
 
 		// search for 1 specific value
 		if (findExactCityData(userInput)) {
-			console.log(findExactCityData(userInput));
+
+			const {latitude: userLat, longitude: userLong} = findExactCityData(userInput)
+
+			const newData = dbData.map(dbResult => {
+				const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
+				return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
+			})
+	
+			res.render("pages/matches", { matches: newData });
+
 			return
 		}
 
