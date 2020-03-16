@@ -46,6 +46,8 @@ app.post("/", async function (req, res) {
 			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
 		})
 
+		newData.sort((a, b) => a.location - b.location);
+
 		res.render("pages/matches", { matches: newData });
 
 		return
@@ -60,6 +62,8 @@ app.post("/", async function (req, res) {
 			const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
 			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
 		})
+
+		newData.sort((a, b) => a.location - b.location);
 
 		res.render("pages/matches", { matches: newData });
 
