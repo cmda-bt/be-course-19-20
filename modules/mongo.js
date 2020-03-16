@@ -3,7 +3,7 @@ require('dotenv').config()
 
 const uri = process.env.MONGO_URI
 
-async function findInDb(collection, searchValue){
+async function findCollectionInDb(collection, searchValue){
 
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
  
@@ -12,7 +12,26 @@ async function findInDb(collection, searchValue){
 
 		const db = client.db('db');
 
-		const festivals = await db.collection(collection).find({ _id: {$ne: ObjectId('5e67a328ad68fa647500239c')} }).toArray();
+		const festivals = await db.collection(collection).find({ _id: {$ne: ObjectId(searchValue)} }).toArray();
+		return festivals	
+ 
+    } catch (e) {
+        console.error(e);
+    } finally {
+        await client.close();
+    }
+}
+
+async function findOneInDb(collection, searchValue){
+
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+ 
+    try {
+		await client.connect();
+
+		const db = client.db('db');
+
+		const festivals = await db.collection(collection).find({ _id: ObjectId(searchValue) }).toArray();
 		return festivals	
  
     } catch (e) {
@@ -40,4 +59,4 @@ async function updateOne(collection, query, insert){
     }
 }
 
-module.exports = { findInDb, updateOne }
+module.exports = { findCollectionInDb, updateOne, findOneInDb }
