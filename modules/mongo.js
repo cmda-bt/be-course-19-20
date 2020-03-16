@@ -48,7 +48,6 @@ async function updateOne(collection, query, insert){
     try {
 		await client.connect();
 
-        console.log({query, insert});
 
         const db = client.db('db');
 
