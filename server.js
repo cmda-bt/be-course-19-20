@@ -31,10 +31,21 @@ app.get("/matches", render.renderMatches)
 // post
 app.post("/", async function (req, res) {
 
+	console.log(req.body);
+
+	// userSuggestion: 'removeLocation'
+
 	let newLocation
 
+	if (req.body.userSuggestion === 'removeLocation') {
+		console.log('remove Location');
+
+		newLocation = { location: { latitude: "", longitude: "", timestamp: Date.now() } }
+	}
+
+
 	// user  provided  location with GEO API
-	if (req.body.userLocation) {
+	else if (req.body.userLocation) {
 		const userGeoAPILocation = JSON.parse(req.body.userLocation)
 		
 		const { latitude: userLat, longitude: userLong } = userGeoAPILocation
