@@ -16,8 +16,8 @@
   <p>Last location update: <%= lastUpdateTime %></p>
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
     <section id="locationInputTypes">
-      <input type="checkbox" id="noLocation" name="userSuggestion" value="noLocation">   
-      <label for="noLocation">No location</label>
+      <input type="checkbox" id="removeLocation" name="userSuggestion" value="removeLocation">   
+      <label for="removeLocation">Remove location</label>
       <input id="userLocation" type="hidden" name="userLocation">
       <button id="submitUserLocation" type="submit">submit</button>
       
