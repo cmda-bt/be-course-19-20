@@ -15,8 +15,13 @@
 
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
     <section id="locationInputTypes">
+      <input type="checkbox" id="noLocation" name="userSuggestion" value="noLocation">   
+      <label for="noLocation">No location</label>
+      <input id="userLocation" type="hidden" name="userLocation">
+      <button id="submitUserLocation" type="submit">submit</button>
+      
       <div class="suggestionsWrapper">
-        <input id="getCustomLocation" type="text" name="userInput" autocomplete="off" value="Westerhaar-Vriezenveensewijk">
+        <input id="getCustomLocation" type="text" name="userInput" autocomplete="off">
         <section id="locationSuggestions" class="suggestions">
           <% if(typeof(results) !== "undefined") { %>
             <% results.map((item, index) => { %>
@@ -26,14 +31,9 @@
           <% } %>
         </section>
       </div>
-      <input type="checkbox" id="noLocation" name="userSuggestion" value="noLocation">   
-      <label for="noLocation">No location</label>
-
-      <input id="userLocation" type="hidden" name="userLocation">
-    </section>
+     </section>
 
     
-    <button id="submitUserLocation" type="submit">submit</button>
   </form>
 
   <script src="../client.js" type="module"></script>
