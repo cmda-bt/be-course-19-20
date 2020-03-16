@@ -69,5 +69,5 @@ Make sure you hand-in your work in the assignment on Brightspace
 [inspiration-author]: https://github.com/samyk
 
 [rubric]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251126/View
-[review]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251124/View
+[review]: https://docs.google.com/document/d/15mBItQ9kX4SScIeXU4QGlTxxAsoKOe39Oc7xz9bCxu4/edit?usp=sharing
 [scheduler]: https://dlo.mijnhva.nl/d2l/le/content/32096/Home
