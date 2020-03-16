@@ -10,7 +10,6 @@
     <h1>Matches</h1>
 
     <% for (let [key, value] of Object.entries(matches)) {%>
-        <% console.log({key, value}) %>
         <p><%= value.name %></p>
         <p>age: <%= value.age %></p>
         <p class="macthLocation"><%= value.location %>km</p>
