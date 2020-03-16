@@ -43,7 +43,7 @@ function getCustomLocation(e) {
 
                 // renders suggestions
                 locationSuggestions.insertAdjacentHTML('beforeend', `
-                    <input type="radio" id="${x}" name="userSuggestion" value="${x}">   
+                    <input type="radio" id="${x}" name="userSuggestion" value="${x}" ${index === 0 ? 'tabindex="0"' :""}>   
                     <label for="${x}">${x}</label>`)
             }
         })
@@ -57,6 +57,13 @@ function getCustomLocation(e) {
             // create eventListener for buttons
             x.addEventListener('click', suggestedLocationTrigger);
         })
+    }
+    else if(preventKeys.includes(e.key)){
+        console.log('preventkey ' + e.key);
+        const suggestionInput = document.getElementsByClassName('suggestionInput')[0]
+        // const suggestionInput = document.getElementById('noLocation')
+        console.log(suggestionInput);
+        suggestionInput.focus()
     }
 }
 
