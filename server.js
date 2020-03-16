@@ -41,12 +41,18 @@ app.post("/", async function (req, res) {
 		const userGeoAPILocation = JSON.parse(req.body.userLocation)
 		const { latitude: userLat, longitude: userLong } = userGeoAPILocation
 
+		const newLocation = {location:{userLat, userLong, timestamp: Date.now()}}
+
+		mongo.updateOne('fakeUsers', '5e67a328ad68fa647500239c', { $set: newLocation })
+
 		const newData = dbData.map(dbResult => {
 			const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
 			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
 		})
 
-		newData.sort((a, b) => a.location - b.location);
+		newData.sort(function (a, b) {
+			return a.location - b.location;
+		  });
 
 		res.render("pages/matches", { matches: newData });
 
@@ -58,12 +64,16 @@ app.post("/", async function (req, res) {
 		// destructuring source : https://wesbos.com/destructuring-objects/
 		const { latitude: userLat, longitude: userLong } = findExactCityData(req.body.userSuggestion);
 
+		
+
 		const newData = dbData.map(dbResult => {
 			const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
 			return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
 		})
 
-		newData.sort((a, b) => a.location - b.location);
+		newData.sort(function (a, b) {
+			return a.location - b.location;
+		  });
 
 		res.render("pages/matches", { matches: newData });
 
@@ -85,6 +95,10 @@ app.post("/", async function (req, res) {
 				const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
 				return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
 			})
+
+			newData.sort(function (a, b) {
+				return a.location - b.location;
+			  });
 	
 			res.render("pages/matches", { matches: newData });
 
