@@ -26,14 +26,24 @@ async function renderMatches(req, res){
 
     const allOtherUserData = await mongo.findCollectionInDb('fakeUsers', req.session._id)
 
-    const newData = allOtherUserData.map(dbResult => {
-        const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
-        return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
-	})
+    let newData
 
-	newData.sort((a, b) => a.location - b.location);
+    if (!userLat && !userLong) {
+        newData = allOtherUserData.map(dbResult => {
+            return { ...dbResult, location: null }
+        })
+    }
 
-	res.render("pages/matches", { matches: newData });
+    else {
+        const newData = allOtherUserData.map(dbResult => {
+            const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
+            return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
+        })
+
+        newData.sort((a, b) => a.location - b.location);
+
+    }
+    res.render("pages/matches", { matches: newData });
 }
 
 module.exports = { renderIndex, renderMatches }
