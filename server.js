@@ -31,10 +31,6 @@ app.get("/matches", render.renderMatches)
 // post
 app.post("/", async function (req, res) {
 
-	console.log(req.body);
-
-	// userSuggestion: 'removeLocation'
-
 	let newLocation
 
 	if (req.body.userSuggestion === 'removeLocation') {
@@ -42,7 +38,6 @@ app.post("/", async function (req, res) {
 
 		newLocation = { location: { latitude: "", longitude: "", timestamp: Date.now() } }
 	}
-
 
 	// user  provided  location with GEO API
 	else if (req.body.userLocation) {
