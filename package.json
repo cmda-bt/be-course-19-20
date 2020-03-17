@@ -4,7 +4,7 @@
   "description": "index",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "nodemon node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,9 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "mongodb": "^3.5.4",
-    "nodemon": "^1.18.10",
-    "path": "^0.12.7",
-    "slug": "^2.1.1"
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
   }
 }
