@@ -101,4 +101,48 @@ This way I can provide older devices to use this feature and can people decide i
 3. 📟 _JavaScript_ compares input with 🏢 _CityJSONData_
 4. 📟 _JavaScript_ injects autocomplete suggestion in DOM if available
 
+## Database structure
 
+The database I use is [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+In this database, we have two collections.
+
+**fakeUsers** (will be named users in future)
+
+```json
+[
+    {
+    "_id": {
+        "$oid": "5e67a500239d946ad68fa647"
+        },
+    "name": "emma",
+    "age": "19",
+    "image": "https://imageUrl.com/images?q=tbn:ANd.png",
+    "location": {
+        "latitude": "52.4144806",
+        "longitude": "5.0219082"
+        },
+    "attendingFestivals": ["5e67978bad68fa6475002398"],
+    "likedUsers": ["5e67a500239dd68fa647946a", ...],
+    "dislikedUsers": ["5dd68fa647946ae67a500239", ...],
+    "matchedUsers": ["5dd68fa647923946ae67a500", ...]
+    }, ...
+]
+```
+
+**festivals** 
+```json
+[
+    {
+    "_id": {
+        "$oid": "5e679814ad68fa6475002399"
+        },
+    "name": "Emporium",
+    "date": "2020-05-23T12:00:00+00:00",
+    "attendingUsers": ["5e67a500239d946ad68fa647", ...],
+    "location": {
+        "latitude": "51.8079329",
+        "longitude": "5.7786437"
+        }
+    }, ...
+]
+```
