@@ -1,7 +1,7 @@
 # Work In Progress
 
 
-## Installing 🔍
+## Installing 
 To install this application enter the following into your terminal:
 ```
 git clone https://github.com/RobinStut/FestiVibe-Dating
@@ -13,7 +13,7 @@ npm install
 npm run start
 ```
 
-## .env example 🔍
+## .env example 
 ```
 MONGO_URI= e.g. mongodb+srv://<username>:<password>@cluster0-v0ywb.mongodb.net/test
 SESSION= e.g session storage
