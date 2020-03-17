@@ -1,9 +1,10 @@
 # Work In Progress
 
+## Installing
 
-## Installing 
 To install this application enter the following into your terminal:
-```
+
+```bash
 git clone https://github.com/RobinStut/FestiVibe-Dating
 
 cd FestiVibe-Dating
@@ -13,8 +14,9 @@ npm install
 npm run start
 ```
 
-## .env example 
-```
+## .env example
+
+```bash
 MONGO_URI= e.g. mongodb+srv://<username>:<password>@cluster0-v0ywb.mongodb.net/test
 SESSION= e.g session storage
 PORT= e.g. 8080
@@ -49,14 +51,14 @@ This way I can provide older devices to use this feature and can people decide i
 
 ### Previous situation without location
 
-1. 👤 _User_ visits  **/matches** route 
+1. 👤 _User_ visits  **/matches** route
 2. 💾 _Session_ _id is saved
 3. 🗄️ _MongoDB_ data will be retreived, excluding your 💾 _Session_ _id
 4. 💞 _Matches_ are rendered with **unordered** 🗄️ _MongoDB_ data
 
 ### Current situation with location
 
-1. 👤 _User_ visits  **/matches** route 
+1. 👤 _User_ visits  **/matches** route
 2. 💾 _Session_ _id is saved
 3. 🗄️ _MongoDB_ data will be retreived, excluding your 💾 _Session_ _id
 4. 📡 _Server_ calculates 🧭 _location_ distances between 👤 _User_ & 💞 _Matches_
@@ -66,25 +68,30 @@ This way I can provide older devices to use this feature and can people decide i
 ### How location works
 
 #### without client side Javascript
+
 1. 👤 _User_ enters living place in **input field**
 
 2. On POST, the 📡 _Server_ will search for a match in 🏢 _CityJSONData_
 3. Outcomes
 
 ❓ _if_ (exact match){
-   1. Get 💾 _Session_ _id, 
+
+   1. Get 💾 _Session_ _id,
    2. Update 🧭 _location_ in 🗄️ _MongoDB_ for 👤 _User_ with their 💾 _Session_ _id
-   
+
 ❓ _if_ (partially match){
-   1. Get first 5 results matching 🏢 _CityJSONData_ 
+
+   1. Get first 5 results matching 🏢 _CityJSONData_
    2. Render suggestions as feedback for 👤 _User_
 
 ❓ _if_ (no match){
+
    1. Render usefull feedback for  👤 _User_
 
 #### with client side Javascript
 
 ##### Using the GEO Location API
+
 1. 📟 _JavaScript_ injects "GEO location" button in **DOM**
 2. 👤 _User_ clicks on "GEO location" button
 3. 📟 _JavaScript_ **disables** submit button
@@ -96,6 +103,7 @@ This way I can provide older devices to use this feature and can people decide i
 9. Update 🧭 location in 🗄️ MongoDB for 👤 User with their 💾 Session _id
 
 ##### Progressive Enhanced input field
+
 1. 👤 _User_ enters living place in **input field**
 2. 📟 _JavaScript_ listens to **keydown** event
 3. 📟 _JavaScript_ compares input with 🏢 _CityJSONData_
@@ -106,7 +114,7 @@ This way I can provide older devices to use this feature and can people decide i
 The database I use is [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
 In this database, we have two collections.
 
-**fakeUsers** (will be named users in future)
+**fakeUsers** model (will be named users in future)
 
 ```javascript
 [
@@ -129,7 +137,8 @@ In this database, we have two collections.
 ]
 ```
 
-**festivals** 
+**festivals** model
+
 ```javascript
 [
     {
