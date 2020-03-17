@@ -12,8 +12,11 @@
   <% if(typeof(message) !== "undefined") { %>
     <p><%= message %></p>
   <% } %>
+    
+  <% if(lastUpdateTime) { %>
+    <p>Last location update: <%= lastUpdateTime %></p>
+  <% } %>
 
-  <p>Last location update: <%= lastUpdateTime %></p>
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
     <section id="locationInputTypes">
       <input type="checkbox" id="removeLocation" name="userSuggestion" value="removeLocation">   

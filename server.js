@@ -73,7 +73,7 @@ app.post("/", async function (req, res) {
 
 			// if there are no matches with the input
 			if (filteredData.length === 0) {
-				res.render("pages/index", { message: `Wij konden ${userInput} niet vinden, probeer een stad in te typen ` });
+				res.render("pages/index", { message: `Wij konden ${userInput} niet vinden, probeer een stad in te typen `, lastUpdateTime: null });
 				return
 			}
 
@@ -81,7 +81,7 @@ app.post("/", async function (req, res) {
 			else {
 				const reducedResults = filteredData.slice(0, 5)
 
-				res.render("pages/index", { results: reducedResults, message: `Wij konden ${userInput} niet vinden, bedoelde je misschien:` });
+				res.render("pages/index", { results: reducedResults, message: `Wij konden ${userInput} niet vinden, bedoelde je misschien:`, lastUpdateTime: null });
 				return
 			}
 		}
