@@ -13,6 +13,14 @@ npm install
 npm run start
 ```
 
+## .env example 🔍
+```
+MONGO_URI= e.g. mongodb+srv://<username>:<password>@cluster0-v0ywb.mongodb.net/test
+SESSION= e.g session storage
+PORT= e.g. 8080
+
+```
+
 ## Feature
 
 When I see a potential match, I want to know how far they are relative to my position, so I can decide if this potential match is between my personal preverences.
