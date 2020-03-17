@@ -108,7 +108,7 @@ In this database, we have two collections.
 
 **fakeUsers** (will be named users in future)
 
-```json
+```javascript
 [
     {
     "_id": {
@@ -130,7 +130,7 @@ In this database, we have two collections.
 ```
 
 **festivals** 
-```json
+```javascript
 [
     {
     "_id": {
