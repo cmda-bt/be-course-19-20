@@ -27,6 +27,7 @@ app.set("views", path.join(__dirname, "views"));
 //get
 app.get("/", render.renderIndex)
 app.get("/matches", render.renderMatches)
+app.get("/festivals", render.renderFestivals)
 
 // post
 app.post("/", async function (req, res) {
