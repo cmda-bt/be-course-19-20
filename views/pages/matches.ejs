@@ -8,6 +8,9 @@
 <body>
     <% include ../partials/nav %>
     <h1>Matches</h1>
+    <% if (!locationIsAvailable) { %>
+        <h2>You have not provided your location</h2>
+    <% } %>    
 
     <% for (let [key, value] of Object.entries(matches)) {%>
         <p><%= value.name %></p>
