@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body>
+    <% include ../partials/nav %>
+    <h1>Festivals</h1>
+    <% if (!locationIsAvailable) { %>
+        <h2>You have not provided your location</h2>
+    <% } %>    
+
+    <% for (let [key, value] of Object.entries(festivals)) {%>
+        <p><%= value.name %></p>
+        <p>date: <%= value.date %></p>
+        <% if (value.location) { %>
+            <p class="macthLocation"><%= value.location %>km</p>
+        <% } %>
+    <% } %>
+
+    <% include ../partials/footer %>
+</body>
+
+</html>
