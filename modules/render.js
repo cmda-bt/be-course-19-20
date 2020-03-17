@@ -49,4 +49,37 @@ async function renderMatches(req, res){
     }
 }
 
-module.exports = { renderIndex, renderMatches }
+async function renderFestivals(req, res){
+
+    // this has to be set after login, now it's hardcoded
+    req.session._id = '5e67a328ad68fa647500239c'
+    
+    const thisUser = await mongo.findOneInDb('fakeUsers', req.session._id)
+    const {latitude:userLat, longitude:userLong} = thisUser[0].location
+
+    const allFestivalData = await mongo.findCollectionInDb('festivals')
+
+    let locationIsAvailable = false
+
+    if (!userLat && !userLong) {
+        const newData = allFestivalData.map(dbResult => {
+            return { ...dbResult, location: null }
+        })
+        res.render("pages/festivals", { festivals: newData, locationIsAvailable });
+    }
+
+    else {
+        locationIsAvailable = true
+
+        const newData = allFestivalData.map(dbResult => {
+            const { location: { latitude: dbLat, longitude: dbLong } } = dbResult
+            return { ...dbResult, location: calcDistance.getDistanceFromLatLonInKm(dbLat, dbLong, userLat, userLong) }
+        })
+
+        newData.sort((a, b) => a.location - b.location);
+
+        res.render("pages/festivals", { festivals: newData, locationIsAvailable });
+    }
+}
+
+module.exports = { renderIndex, renderMatches, renderFestivals }
