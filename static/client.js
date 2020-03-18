@@ -9,7 +9,7 @@ const locationFormInputs = document.getElementById('locationInputTypes')
 
 function setGeoLocationButtonInForm() {
     locationFormInputs.insertAdjacentHTML('afterbegin', `
-       <button id="getUserLocationByGeoAPI">GEO API</button> 
+       <button id="getUserLocationByGeoAPI"></button> 
     `)
 
     document.getElementById('getUserLocationByGeoAPI').addEventListener('click', getLocationTrigger);
@@ -106,6 +106,7 @@ async function getLocationTrigger(e) {
     .then((x)=>{
         // enable submit button
         submitUserLocationForm.disabled = false 
+        document.getElementById('getUserLocationByGeoAPI').setAttribute("class", "clicked");
         return x})
 
     // stores location in hidden input
