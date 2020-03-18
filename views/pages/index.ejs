@@ -8,37 +8,46 @@
 <body>
   <% include ../partials/nav %>
   <link rel="stylesheet" href="../location.css">
-  
-  <% if(typeof(message) !== "undefined") { %>
-    <p><%= message %></p>
-  <% } %>
-    
-  <% if(lastUpdateTime) { %>
-    <p>Last location update: <%= lastUpdateTime %></p>
-  <% } %>
 
-  <form action="/" method="POST" enctype="application/x-www-form-urlencoded">
-    <section id="locationInputTypes">
-      <input type="checkbox" id="removeLocation" name="userSuggestion" value="removeLocation">   
-      <label for="removeLocation">Remove location</label>
+
+
+  <form action="/" method="POST" enctype="application/x-www-form-urlencoded" class="form_location">
+    <section id="locationInputTypes" class="form_location-inputs">
+      <input id="getCustomLocation" class="form_location-textInput" type="text" name="userInput" autocomplete="off">
       <input id="userLocation" type="hidden" name="userLocation">
-      <button id="submitUserLocation" type="submit">submit</button>
-      
-      <div class="suggestionsWrapper">
-        <input id="getCustomLocation" type="text" name="userInput" autocomplete="off">
-        <section id="locationSuggestions" class="suggestions">
-          <% if(typeof(results) !== "undefined") { %>
-            <% results.map((item, index) => { %>
-              <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">   
-              <label for="<%= item.woonplaats %>"><%= item.woonplaats %></label>
-            <% }) %>
-          <% } %>
-        </section>
-      </div>
-     </section>
-
+    </section>
     
+    <section class="form_location-message">
+      <% if(typeof(message) !== "undefined") { %>
+      <p class="error"><%= message %></p>
+      <% } %>
+
+      <% if(lastUpdateTime) { %>
+      <p class="time">Last location update: <%= lastUpdateTime %></p>
+      <% } %>
+    </section>
+    <div class="suggestionsWrapper">
+      <section id="locationSuggestions" class="suggestions">      
+
+        <% if(typeof(results) !== "undefined") { %>
+        <% results.map((item, index) => { %>
+          <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">
+          <label for="<%= item.woonplaats %>">
+            <%= item.woonplaats %>
+          </label>
+        
+        <% }) %>
+        <% } %>
+      </section>
+    </div>
+
+    <input type="checkbox" id="removeLocation" class="form_location-remove" name="userSuggestion"
+      value="removeLocation">
+    <label for="removeLocation" class="form_location-removeLabel">
+      Remove my location from database</label>
+    <button id="submitUserLocation" type="submit" class="form_location-submit">Submit</button>
   </form>
+
 
   <a href="/matches">Matches</a>
   <a href="/festivals">festivals</a>
