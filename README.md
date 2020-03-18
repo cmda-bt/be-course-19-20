@@ -155,3 +155,10 @@ In this database, we have two collections.
     }, ...
 ]
 ```
+
+## Recourses
+
+* [Lat Long Calculation](http://www.movable-type.co.uk/scripts/latlong.html)
+* [Destructuring of WesBos](https://wesbos.com/destructuring-renaming/)
+* [MongoDB collection methods](https://docs.mongodb.com/manual/reference/method/js-collection/)
+* [Mongo setup syntax](https://www.mongodb.com/blog/post/quick-start-nodejs-mongodb--how-to-get-connected-to-your-database)
