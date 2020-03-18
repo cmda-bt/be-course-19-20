@@ -1,67 +1,175 @@
-.suggestionsWrapper{
-    max-width: 20em;
-    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-    font-family: 'Roboto Slab', serif;
-
+.suggestionsWrapper {
+	/* max-width: 20em; */
+	font-family: "Roboto Slab", serif;
 }
 
-.suggestions{
-    display: flex;
-    flex-direction: column;
+.suggestions {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-input[type="text"]{
-    background-color: #f2f2f2;
-    color: white;
-    border: 0;
-    height: 2em;
-    width: 100%;
-    padding-left: .5em;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    font-size: 14px;
-    padding: 1em;
-    color: rgb(40, 40, 40);
-    box-sizing: border-box;
-    text-transform: capitalize;
-    border-bottom: 1px solid rgb(200, 200, 200);
+.suggestions label {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+	background-color: white;
+	color: #e83a42;
+	border: 0;
+	font-size: 12px;
+	padding: 1em;
+	font-family: "Roboto Slab", serif;
+	font-weight: 500;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	margin: 0.5em 1em 0.5em 0;
+	justify-content: center;
+	flex-direction: column;
 }
 
-.suggestions label{
-    background-color: #e83a42;
-    border: 0;
-    height: 2em;
-    width: 100%;
-    padding-left: .5em;
-    font-size: 14px;
-    padding: 1em;
-    color: rgb(40, 40, 40);
-    color: white;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
+.suggestions label:nth-of-type(1):before {
+	display: block;
+	content: "🏘️";
+}
+.suggestions label:nth-of-type(2):before {
+	display: block;
+	content: "🏠";
+}
+.suggestions label:nth-of-type(3):before {
+	display: block;
+	content: "🏡";
+}
+.suggestions label:nth-of-type(4):before {
+	display: block;
+	content: "🏚️";
+}
+.suggestions label:nth-of-type(5):before {
+	display: block;
+	content: "🏛️";
 }
 
-.suggestions label:last-of-type {
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-  }
-
-.suggestions input[type="radio"]{
-    display: none;
+.suggestions input[type="radio"] {
+	padding: 0;
+	margin: 0;
+	width: 0;
+	height: 0;
+	opacity: 0;
 }
 
-input:hover + label {
-    color: blue;
-    background-color: green;
-  }
+.suggestions label:hover,
+.suggestions label:focus {
+	background-color: rgba(255, 255, 255, 0.3);
+	color: white;
+}
 
-input:checked + label {
-    color: red;
-    background-color: aliceblue;
-  }
+.suggestions input:checked + label {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+}
+
+.form_location {
+	background-color: #44b69f;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+.form_location-inputs {
+	display: flex;
+}
+
+.form_location-textInput {
+	background-color: #f2f2f2;
+	color: white;
+	border: 0;
+	height: 2em;
+	width: 100%;
+	font-family: "Roboto Slab", serif;
+	font-weight: 400;
+	font-size: 14px;
+	padding: 1em;
+	color: rgb(40, 40, 40);
+	box-sizing: border-box;
+	text-transform: capitalize;
+	border-bottom: 1px solid rgb(200, 200, 200);
+	content: " ";
+	background-image: url("./src/svg/search.svg");
+	background-size: 1.25em 1.25em;
+	background-repeat: no-repeat;
+	background-position: 97% center;
+}
+
+#getUserLocationByGeoAPI {
+	display: block;
+	height: 29px;
+	width: 29px;
+	content: " ";
+	background-image: url("./src/svg/location.svg");
+	background-size: 1.25em 1.25em;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 1em;
+	border: 0;
+}
+
+#getUserLocationByGeoAPI:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+	background-image: url("./src/svg/location-white.svg");
+}
+
+#getUserLocationByGeoAPI.clicked {
+	background-color: rgba(0, 0, 0, 0.2);
+	background-image: url("./src/svg/location-white.svg");
+}
+
+.form_location-remove {
+	visibility: hidden;
+	opacity: 0;
+	margin: 0;
+	width: 0;
+	height: 0;
+}
+
+.form_location-removeLabel {
+	font-size: 12px;
+	font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+	color: #3d3d3b;
+	text-decoration: underline;
+	cursor: pointer;
+	margin: 8px 0;
+	padding: 4px;
+}
+
+.form_location-removeLabel:hover {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form_location-remove:checked + .form_location-removeLabel {
+	background-color: rgba(0, 0, 0, 0.2);
+	color: white;
+}
+
+.form_location-message {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+}
+
+.form_location-message .time {
+	color: white;
+}
+
+.form_location-message .error {
+	color: #e83a42;
+}
+
+.form_location-submit {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 0;
+	color: white;
+	padding: 1em;
+}
+
+.form_location-submit:disabled {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: #e83a42;
+}
