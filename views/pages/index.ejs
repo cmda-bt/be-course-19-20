@@ -8,15 +8,15 @@
 <body>
   <% include ../partials/nav %>
   <link rel="stylesheet" href="../location.css">
-
-
+  <link rel="stylesheet" href="../index.css">
 
   <form action="/" method="POST" enctype="application/x-www-form-urlencoded" class="form_location">
     <section id="locationInputTypes" class="form_location-inputs">
-      <input id="getCustomLocation" class="form_location-textInput" type="text" name="userInput" autocomplete="off" placeholder="Enter a dutch city">
+      <input id="getCustomLocation" class="form_location-textInput" type="text" name="userInput" autocomplete="off"
+        placeholder="Enter a dutch city">
       <input id="userLocation" type="hidden" name="userLocation">
     </section>
-    
+
     <section class="form_location-message">
       <% if(typeof(message) !== "undefined") { %>
       <p class="error"><%= message %></p>
@@ -27,15 +27,15 @@
       <% } %>
     </section>
     <div class="suggestionsWrapper">
-      <section id="locationSuggestions" class="suggestions">      
+      <section id="locationSuggestions" class="suggestions">
 
         <% if(typeof(results) !== "undefined") { %>
         <% results.map((item, index) => { %>
-          <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">
-          <label for="<%= item.woonplaats %>">
-            <%= item.woonplaats %>
-          </label>
-        
+        <input type="radio" id="<%= item.woonplaats %>" name="userSuggestion" value="<%= item.woonplaats %>">
+        <label for="<%= item.woonplaats %>">
+          <%= item.woonplaats %>
+        </label>
+
         <% }) %>
         <% } %>
       </section>
@@ -48,11 +48,23 @@
     <button id="submitUserLocation" type="submit" class="form_location-submit">Submit</button>
   </form>
 
-
-  <a href="/matches">Matches</a>
-  <a href="/festivals">festivals</a>
-
-  <script src="../client.js" type="module"></script>
+  <div class="routeWrapper">
+    <section class="routeItem">
+      <a href="/festivals" class="routeItem-anchor">
+        <img src="https://raw.githubusercontent.com/RobinStut/FestiVibe-Dating/master/static/src/img/beer.png" alt=""
+          class="routeItem-icon">
+        Festivals
+      </a>
+    </section>
+    <section class="routeItem">
+      <a href="/matches" class="routeItem-anchor">
+        <img src="https://raw.githubusercontent.com/RobinStut/FestiVibe-Dating/master/static/src/img/match.png" alt=""
+          class="routeItem-icon">
+        Matches
+      </a>
+    </section>
+  </div>
+  <script src=" ../client.js" type="module"></script>
   <% include ../partials/footer %>
 </body>
 
