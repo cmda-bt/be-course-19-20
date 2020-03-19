@@ -4,21 +4,30 @@
 <head>
     <% include ../partials/head %>
 </head>
+<link rel="stylesheet" href="../matches.css">
+
 
 <body>
     <% include ../partials/nav %>
-    <h1>Matches</h1>
-    <% if (!locationIsAvailable) { %>
+    <section class="matches-messages">
+        <h1>Matches</h1>
+        <% if (!locationIsAvailable) { %>
         <h2>You have not provided your location</h2>
-    <% } %>    
-
-    <% for (let [key, value] of Object.entries(matches)) {%>
-        <p><%= value.name %></p>
-        <p>age: <%= value.age %></p>
-        <% if(value.location) { %>
-            <p class="macthLocation"><%= value.location %>km</p>
         <% } %>
-        <img src="<%= value.image %>" alt="a picture of <%= value.name %>">
+    </section>
+
+    <section class="matchesWrapper"></section>
+    <% for (let [key, value] of Object.entries(matches)) {%>
+    <img src="<%= value.image %>" alt="a picture of <%= value.name %>" class="match-image">
+    <div class="match-details-container">
+        <h3 class="match-name"><%= value.name %></p>
+            <div class="match-age-location-wrapper">
+                <p class="match-age">age: <%= value.age %></p>
+                <% if(value.location) { %>
+                <p class="match-location"><%= value.location %>km</p>
+                <% } %>
+            </div>
+    </div>
     <% } %>
 
     <% include ../partials/footer %>
