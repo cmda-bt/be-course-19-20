@@ -7,19 +7,29 @@
 
 <body>
     <% include ../partials/nav %>
-    <h1>Festivals</h1>
-    <% if (!locationIsAvailable) { %>
+    <link rel="stylesheet" href="../festivals.css">
+
+    <section class="festivals-messages">
+        <h1>Festivals</h1>
+        <% if (!locationIsAvailable) { %>
         <h2>You have not provided your location</h2>
-    <% } %>    
-
-    <% for (let [key, value] of Object.entries(festivals)) {%>
-        <p><%= value.name %></p>
-        <p>date: <%= value.date %></p>
-        <% if (value.location) { %>
-            <p class="macthLocation"><%= value.location %>km</p>
         <% } %>
-    <% } %>
+    </section>
 
+    <section class="festivalsWrapper">
+        <% for (let [key, value] of Object.entries(festivals)) {%>
+        <div class="festival-image-placeholder"></div>
+        <div class="festival-details-container">
+            <h3 class="festival-name"><%= value.name %></h3>
+            <div class="festival-date-location-wrapper">
+                <p class="festival-date">date: <%= value.date %></p>
+                <% if (value.location) { %>
+                <p class="festival-location"><%= value.location %>km</p>
+                <% } %>
+            </div>
+        </div>
+        <% } %>
+    </section>
     <% include ../partials/footer %>
 </body>
 
