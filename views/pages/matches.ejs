@@ -20,13 +20,13 @@
         <% for (let [key, value] of Object.entries(matches)) {%>
         <img src="<%= value.image %>" alt="a picture of <%= value.name %>" class="match-image">
         <div class="match-details-container">
-            <h3 class="match-name"><%= value.name %></p>
-                <div class="match-age-location-wrapper">
-                    <p class="match-age">age: <%= value.age %></p>
-                    <% if(value.location) { %>
-                    <p class="match-location"><%= value.location %>km</p>
-                    <% } %>
-                </div>
+            <h3 class="match-name"><%= value.name %></h3>
+            <div class="match-age-location-wrapper">
+                <p class="match-age">age: <%= value.age %></p>
+                <% if(value.location) { %>
+                <p class="match-location"><%= value.location %>km</p>
+                <% } %>
+            </div>
         </div>
         <% } %>
     </section>
