@@ -18,7 +18,9 @@
 
     <% for (let [key, value] of Object.entries(matches)) {%>
     <section class="matchesWrapper">
-        <img src="<%= value.image %>" alt="a picture of <%= value.name %>" class="match-image">
+        <div class="match-image-container">
+            <img src="<%= value.image %>" alt="a picture of <%= value.name %>" class="match-image">
+        </div>
         <div class="match-details-container">
             <h3 class="match-name"><%= value.name %></h3>
             <div class="match-age-location-wrapper">
