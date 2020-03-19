@@ -16,8 +16,8 @@
         <% } %>
     </section>
 
+    <% for (let [key, value] of Object.entries(festivals)) {%>
     <section class="festivalsWrapper">
-        <% for (let [key, value] of Object.entries(festivals)) {%>
         <div class="festival-image-placeholder"></div>
         <div class="festival-details-container">
             <h3 class="festival-name"><%= value.name %></h3>
@@ -28,8 +28,8 @@
                 <% } %>
             </div>
         </div>
-        <% } %>
     </section>
+    <% } %>
     <% include ../partials/footer %>
 </body>
 
