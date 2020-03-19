@@ -1,0 +1,59 @@
+.routeWrapper {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.routeItem {
+	color: white;
+	margin-bottom: 2em;
+}
+
+.routeItem:nth-of-type(1) {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.routeItem .routeItem-anchor {
+	width: 66vw;
+	height: 4em;
+	line-height: 4em;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+	text-decoration: none;
+	font-weight: 900;
+	font-size: 3em;
+	color: white;
+	min-width: 340px;
+	max-width: 380px;
+}
+
+.routeItem:nth-of-type(1) .routeItem-anchor {
+	background-color: #f9323d;
+	clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+	text-align: left;
+	padding-left: 1em;
+}
+
+.routeItem:nth-of-type(2) {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.routeItem:nth-of-type(2) .routeItem-anchor {
+	background-color: #f9be03;
+	clip-path: polygon(20% 0%, 100% 0, 100% 100%, 0% 100%);
+	text-align: right;
+	padding-right: 1em;
+}
+
+.routeItem-icon {
+	height: 40px;
+	width: 40px;
+}
+
+@media (min-width: 780px) {
+	.routeWrapper {
+		flex-direction: unset;
+		justify-content: space-evenly;
+	}
+}

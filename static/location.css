@@ -70,6 +70,7 @@
 	padding: 1em;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 2em;
 }
 
 .form_location-inputs {
