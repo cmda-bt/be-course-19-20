@@ -1,0 +1,156 @@
+.allMatchesWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 2em;
+}
+
+.match-image {
+	box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.matches-messages {
+	font-family: "Roboto Slab", serif;
+	margin: 0;
+}
+
+.matches-messages h1 {
+	font-size: 3em;
+	clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+	color: white;
+	background-color: #e83a42;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	width: fit-content;
+	margin: 1rem;
+}
+
+.matches-messages h2 {
+	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+	color: white;
+	background-color: #f9be05;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	width: fit-content;
+	margin: 1rem;
+	font-size: 2rem;
+}
+
+.festivals-messages {
+	font-family: "Roboto Slab", serif;
+	margin: 0;
+}
+
+.festivals-messages h1 {
+	font-size: 3em;
+	clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+	color: white;
+	background-color: #e83a42;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	width: fit-content;
+	margin: 1rem;
+}
+
+.festivals-messages h2 {
+	clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+	color: white;
+	background-color: #f9be05;
+	padding-left: 1rem;
+	padding-right: 3rem;
+	width: fit-content;
+	margin: 1rem;
+	font-size: 2rem;
+}
+
+.festivalsWrapper:nth-of-type(5n + 1) .festival-details-container {
+	background-color: #e83a42;
+}
+
+.festivalsWrapper:nth-of-type(5n + 2) .festival-details-container {
+	background-color: #f9be05;
+}
+
+.festivalsWrapper:nth-of-type(5n + 3) .festival-details-container {
+	background-color: #44b69f;
+}
+
+.festivalsWrapper:nth-of-type(5n + 4) .festival-details-container {
+	background-color: #87cccc;
+}
+
+.festivalsWrapper:nth-of-type(5n + 5) .festival-details-container {
+	background-color: #3d3d3b;
+}
+
+.festival-details-container {
+	height: 4em;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+	text-decoration: none;
+	font-weight: 900;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 420px;
+	margin-top: -2em;
+}
+
+.allfestivalsWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-bottom: 2em;
+}
+
+.festivalsWrapper {
+	height: 20em;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+
+.festival-image-placeholder {
+	width: 100%;
+	height: 15em;
+	background: rgb(106, 106, 105);
+	animation: example 4s infinite;
+}
+
+@keyframes example {
+	0% {
+		background: rgb(106, 106, 105);
+	}
+	50% {
+		background: rgb(136, 136, 135);
+	}
+	100% {
+		background: rgb(106, 106, 105);
+	}
+}
+
+.festival-name {
+	font-size: 1em;
+	line-height: 0;
+	padding-left: 1em;
+	margin: 0;
+}
+
+.festival-date-location-wrapper {
+	display: flex;
+	flex-direction: column;
+	padding-right: 1em;
+}
+
+.festival-date {
+	font-size: 1.25em;
+	margin: 0;
+	text-align: right;
+}
+
+.festival-location {
+	font-size: 0.75em;
+	margin: 0;
+	text-align: right;
+}
