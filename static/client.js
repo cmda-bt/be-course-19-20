@@ -2,7 +2,7 @@ import cityData from './data/onlyCityData.js'
 import { userLocation, stringify, upperCaseCorrection, removeFromDOM, addValueToInput } from './modules/helper.js';
 
    const storeUserLocation = document.getElementById("userLocation")
-const   submitUserLocationForm = document.getElementById('submitUserLocation')
+        const   submitUserLocationForm = document.getElementById('submitUserLocation')
 const customLocationTrigger = document.getElementById('getCustomLocation')
             const locationSuggestions = document.getElementById('locationSuggestions')
 const locationFormInputs = document.getElementById('locationInputTypes')
