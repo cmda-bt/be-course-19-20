@@ -1,6 +1,9 @@
 import cityData from './data/onlyCityData.js'
 import { userLocation, stringify, upperCaseCorrection, removeFromDOM, addValueToInput } from './modules/helper.js';
 
+var a = "b" // this will yield eslint error
+
+
    const storeUserLocation = document.getElementById("userLocation")
         const   submitUserLocationForm = document.getElementById('submitUserLocation')
 const customLocationTrigger = document.getElementById('getCustomLocation')
