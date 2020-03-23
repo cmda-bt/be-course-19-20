@@ -5,7 +5,20 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon node server.js"
+    "dev": "nodemon node server.js",
+    "format": "prettier --write static/**/*.js",
+    "check": "prettier --check static/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
@@ -28,6 +41,9 @@
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "nodemon": "^1.19.4",
+    "prettier": "2.0.1"
   }
 }
