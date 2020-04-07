@@ -32,7 +32,8 @@ In the lab we'll do a **peer review** by having a look at the assessment checkli
 **A2 review:**  
 This is a peer review document you can fill-in on the project of your fellow student. It's a good last check to see if everything is in order.
 
-→ [Review][review]
+→ [Team Review][review-team]  
+→ [Student Review][review-student]
 
 **A2 rubric:**  
 This is the rubric your teacher will grade you on. Ask yourself upon completion if everything is clear and that you understand each row and column, if not ask your teacher!
@@ -75,5 +76,6 @@ Make sure you hand-in your work in the assignment on Brightspace
 [inspiration-author]: https://github.com/noffle
 
 [rubric]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251300/View
-[review]: https://dlo.mijnhva.nl/d2l/le/content/32096/viewContent/251302/View
 [scheduler]: https://dlo.mijnhva.nl/d2l/le/content/32096/Home
+[review-student]: https://docs.google.com/document/d/1Ijhm8j4RObrMdb-W1rarROs-DD594VUYGzpi80D5Kvo/edit?usp=sharing
+[review-team]: https://docs.google.com/document/d/1xRa-XkODtyw4XndumashK4Hll5KFqWGBNLGPOHuCY3s/edit?usp=sharing
