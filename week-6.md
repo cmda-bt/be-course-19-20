@@ -41,7 +41,7 @@ Before you start you'll probably want to read a bit about **Production environme
 *   **Due**: before week 7
 
 #### Description
-This and next week you'll pick 1 topic (2 in total) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
+This and next week you'll pick 1 topic (minimun, but you can also do more) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
 
 → [List of topics you can pick from][topics]
 

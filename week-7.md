@@ -32,7 +32,7 @@ Before you start you'll probably want to read a bit about **Error handling** **D
 
 ![Topic banner](/assets/banners/topic.jpg)
 
-> Pick one topic from the list below and work on that topic for your team assessment.
+> If you haven't already, pick one topic from the list below and work on that topic for your team assessment.
 
 #### Synopsis
 
@@ -42,7 +42,7 @@ Before you start you'll probably want to read a bit about **Error handling** **D
 *   **Due**: before week 8
 
 #### Description
-This week you'll pick your second topic (2 in total) to work on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
+This week you'll continue working on your topic on for the team assessment. This can be things like security enhancements, application structure or performance optimizations.
 
 → [List of topics you can pick from][topics]
 
