@@ -122,7 +122,7 @@ You probably have gathered data from the client to the server but what happens w
 
 - Start small. Don't try to store everything into the database at once.
 - You can use the [`mongodb`](https://www.npmjs.com/package/mongodb) package inside node to interface with your database.
-- Additionally you can use [`mongoose`](https://www.npmjs.com/package/mongoose) it makes it a bit easier to model and your database.
+- Additionally you can use [`mongoose`](https://www.npmjs.com/package/mongoose) it makes it a bit easier to model and manage your database.
 - You can use a [MongoDB GUI](https://www.mongodb.com/products/compass) to see and manipulate your data with a handy User Inerface.
 
 ### Session
