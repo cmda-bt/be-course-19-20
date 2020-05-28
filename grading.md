@@ -85,8 +85,8 @@ You are not allowed to simply use portions of someone else's work in your projec
 
 The manner in which you cite your sources depends. The most widely used style at the AUAS is [APA](https://www.amsterdamuas.com/library/services/acknowledging-sources/apa-style/apa-style.html) of the American Psychological Association. Make sure you cite your sources in the repository, code comments or documentation of your project on GitHub.
 
-[a1]: assesments/a1.md
-[a2]: assesments/a2.md
+[a1]: https://github.com/cmda-bt/be-course-19-20/blob/master/assessments/a1.md
+[a2]: https://github.com/cmda-bt/be-course-19-20/blob/master/assessments/a2.md
 [banner]: https://cmda-bt.github.io/be-course-18-19/assets/banner-grading.svg
 [grading]: grading.md
 [goals]: https://github.com/cmda-bt/be-course-18-19#goals
