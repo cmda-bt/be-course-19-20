@@ -109,7 +109,7 @@ Let us know what you thought of the homework, what part you spend a lot of time 
 [workshopper]: https://github.com/azat-co/expressworks
 [query]: https://www.youtube.com/watch?v=zDovsTG2a7g
 [template]: https://expressjs.com/en/guide/using-template-engines.html
-[issues]: https://github.com/cmda-bt/be-course-18-19/issues/new/choose
+[issues]: https://github.com/cmda-bt/be-course-19-20/issues/new/choose
 
 [unfurl]: https://dfir.blog/unfurl/
 [back-end]: https://zellwk.com/blog/frontend-vs-backend/
