@@ -28,16 +28,6 @@ _These are small examples found on code sandbox sites like Glitch, Codepen or Gi
 
 > Here are some results from the previous years. **Note**: _The curriculum of this year might have different requirements then the examples shown below_.
 
-### 17/18
-
-<table>
-  <tr valign="top">
-    <td width="25%"><a href="https://github.com/theonejonahgold"><strong>@theonejonahgold</strong></a><br><a href="https://github.com/theonejonahgold/be-assessment-2"><img src="https://raw.githubusercontent.com/theonejonahgold/be-assessment-2/master/screenshot.png"></a></td>
-    <td width="25%"><a href="https://github.com/MonikaaS"><strong>@MonikaaS</strong></a><br><a href="https://github.com/MonikaaS/be-assessment-2"><img src="https://raw.githubusercontent.com/MonikaaS/be-assessment-2/master/screenshot.png"></a></td>
-    <td width="25%"><a href="https://github.com/olli208"><strong>@olli208</strong></a><br><a href="https://github.com/olli208/weather-app"><img src="https://raw.githubusercontent.com/olli208/weather-app/master/readme/screenshot.png"></a></td>
-  </tr>
-</table>
-
 ### 18/19
 
 <table>
@@ -54,7 +44,7 @@ _These are small examples found on code sandbox sites like Glitch, Codepen or Gi
   <tr valign="top">
     <td width="25%"><a href="https://github.com/BVictorB"><strong>@BVictorB</strong></a><br><a href="https://github.com/BVictorB/cmd-dating-app"><img src="/assets/images/victor.png"></a></td>
     <td width="25%"><a href="https://github.com/dewarian/"><strong>@dewarian</strong></a><br><a href="https://github.com/dewarian/bt-dating-app"><img src="/assets/images/dewarian.png"></a></td>
-    <td width="25%"><a href="https://github.com/sjagoori"><strong>@sjagoori</strong></a><br><a href="https://github.com/sjagoori/project-tech"><img src="/assets/images/dewarian.png"></a></td>
+    <td width="25%"><a href="https://github.com/sjagoori"><strong>@sjagoori</strong></a><br><a href="https://github.com/sjagoori/project-tech"><img src="/assets/images/sjagoori.png"></a></td>
   </tr>
 </table>
 
