@@ -1,4 +1,8 @@
  # ![Backend - Course 2019-2020][banner]
+ 
+ 
+> **Note**: Back-end has concluded for 2019/2020. Next year will be a new, changed, curriculum. Back-end scores an `7.6` in the student survey! Have a look at the [`/examples`](/examples) folder to see some results from this year.
+
 
 ## Table of Contents
 
